@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Buchhandlung.iml" filepath="$PROJECT_DIR$/Buchhandlung.iml" />
-      <module fileurl="file://$PROJECT_DIR$/GUI/GUI.iml" filepath="$PROJECT_DIR$/GUI/GUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BuchhandlungII.iml" filepath="$PROJECT_DIR$/BuchhandlungII.iml" />
     </modules>
   </component>
 </project>

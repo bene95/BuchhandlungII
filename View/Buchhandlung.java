@@ -1,11 +1,8 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.print.Book;
 
-/**
- * Created by wn00084650 on 04.04.2017.
- */
+
 public class Buchhandlung {
     private JTabbedPane NewBook;
     private JTextField txtNewBookTitel;
@@ -31,12 +28,16 @@ public class Buchhandlung {
 
 
     public Buchhandlung() {
-        NewBookSubmit.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                Book book = new Book(lblNewBookTitel.toString(),lblNewBookQuantity.toString(),lblNewBookUUID.toString());
-
-            }
+        NewBookSubmit.addActionListener(actionEvent -> {
+            Book book = new Book(txtNewBookTitel.toString(),txtNewBookQuantity.toString(),txtNewBookUUID.toString());
+            Configuration.instance.viewModel.createNewBook(book);
+        });
+        btnUpdateBookSubmit.addActionListener(actionEvent -> {
+            Book book = new Book(txtUpdateBookTitel.toString(),txtUpdateBookQuantity.toString(),txtUpdateBookUUID.toString());
+            Configuration.instance.viewModel.updateBook(book);
+        });
+        btnDeleteBookSubmit.addActionListener(actionEvent -> {
+            Configuration.instance.viewModel.deleteBook(txtDeleteBookTitel.toString());
         });
     }
 }
