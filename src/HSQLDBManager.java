@@ -1,5 +1,3 @@
-package data;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -12,12 +10,13 @@ public enum HSQLDBManager {
     private String driverName = "jdbc:hsqldb:file:";
     private String username = "SA";
     private String password = "";
+    private String userDir = Configuration.instance.userDirectory;
 
     //Connect to Database which is located in the lib package (can be changed)
     public void startup() {
         try {
             Class.forName("org.hsqldb.jdbcDriver");
-            String databaseURL = driverName + "C:\\Users\\hro\\Desktop\\Buchhandlung\\BuchhandlungII\\database\\database";
+            String databaseURL = driverName + "database\\database";
             connection = DriverManager.getConnection(databaseURL,username,password);
         } catch (Exception e) {
             System.out.println(e.getMessage());
