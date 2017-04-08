@@ -1,31 +1,33 @@
+package View;
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import Model.Book;
+import src.*;
 
 
 public class Buchhandlung extends JFrame {
     private JTabbedPane NewBook;
-    private JTextField txtNewBookTitel;
+    private JTextField txtNewBookTitle;
     private JTextField txtNewBookQuantity;
     private JTextField txtNewBookUUID;
     private JButton NewBookSubmit;
     private JButton btnUpdateBookSubmit;
-    private JTextField txtUpdateBookTitel;
+    private JTextField txtUpdateBookTitle;
     private JLabel lblUpdateBookQuantity;
     private JLabel lblUpdateBookUUID;
-    private JLabel lblUpdteBookTitel;
+    private JLabel lblUpdteBookTitle;
     private JTextField txtUpdateBookQuantity;
     private JTextField txtUpdateBookUUID;
-    private JLabel lblNewBookTitel;
+    private JLabel lblNewBookTitle;
     private JLabel lblNewBookUUID;
     private JLabel lblNewBookQuantity;
     private JPanel tabNewBook;
     private JPanel tabUpdateBook;
-    private JTextField txtDeleteBookTitel;
+    private JTextField txtDeleteBookTitle;
     private JPanel tabDeleteBook;
     private JButton btnDeleteBookSubmit;
-    private JLabel lblDeleteBookTitel;
+    private JLabel lblDeleteBookTitle;
     private JPanel rootPanel;
 
 
@@ -39,15 +41,15 @@ public class Buchhandlung extends JFrame {
         setVisible(true);
 
         NewBookSubmit.addActionListener(actionEvent -> {
-            Book book = new Book(txtNewBookTitel.toString(),txtNewBookQuantity.toString(),txtNewBookUUID.toString());
+            Book book = new Book(txtNewBookTitle.toString(),txtNewBookQuantity.toString(),txtNewBookUUID.toString());
             Configuration.instance.viewModel.createNewBook(book);
         });
         btnUpdateBookSubmit.addActionListener(actionEvent -> {
-            Book book = new Book(txtUpdateBookTitel.toString(),txtUpdateBookQuantity.toString(),txtUpdateBookUUID.toString());
+            Book book = new Book(txtUpdateBookTitle.toString(),txtUpdateBookQuantity.toString(),txtUpdateBookUUID.toString());
             Configuration.instance.viewModel.updateBook(book);
         });
         btnDeleteBookSubmit.addActionListener(actionEvent -> {
-            Configuration.instance.viewModel.deleteBook(txtDeleteBookTitel.toString());
+            Configuration.instance.viewModel.deleteBook(txtDeleteBookTitle.toString());
         });
     }
 }

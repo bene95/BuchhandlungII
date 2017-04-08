@@ -1,3 +1,4 @@
+package Model;
 public class Book {
     private String titel;
     private String quantity;
