@@ -5,6 +5,8 @@ public class Main {
         //HSQLDBManager.instance.startup();
         //HSQLDBManager.instance.insert();
         //HSQLDBManager.instance.shutdown();
+        Buchhandlung buchhandlung = new Buchhandlung();
+        buchhandlung.show();
         System.out.println(Configuration.instance.userDirectory);
     }
 }

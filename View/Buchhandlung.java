@@ -1,9 +1,10 @@
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
-public class Buchhandlung {
+public class Buchhandlung extends JFrame {
     private JTabbedPane NewBook;
     private JTextField txtNewBookTitel;
     private JTextField txtNewBookQuantity;
@@ -25,9 +26,18 @@ public class Buchhandlung {
     private JPanel tabDeleteBook;
     private JButton btnDeleteBookSubmit;
     private JLabel lblDeleteBookTitel;
+    private JPanel rootPanel;
 
 
     public Buchhandlung() {
+        super  ();
+        pack();
+        setContentPane(rootPanel);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(new Dimension(400,275));
+
+        setVisible(true);
+
         NewBookSubmit.addActionListener(actionEvent -> {
             Book book = new Book(txtNewBookTitel.toString(),txtNewBookQuantity.toString(),txtNewBookUUID.toString());
             Configuration.instance.viewModel.createNewBook(book);
