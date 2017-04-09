@@ -1,4 +1,4 @@
-package ViewModel;
+package ViewModel.Events;
 
 import Model.Book;
 

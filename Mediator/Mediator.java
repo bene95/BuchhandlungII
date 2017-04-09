@@ -1,9 +1,8 @@
 package Mediator;
 
 import ViewModel.*;
+import ViewModel.Events.*;
 import com.google.common.eventbus.Subscribe;
-
-import javax.swing.*;
 
 
 public class Mediator extends Subscriber {

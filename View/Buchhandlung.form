@@ -134,7 +134,7 @@
                   <text value="New Title:"/>
                 </properties>
               </component>
-              <component id="b901b" class="javax.swing.JLabel" binding="lblUpdteBookTitle">
+              <component id="b901b" class="javax.swing.JLabel" binding="lblUpdteBookOldTitle">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
                 </constraints>

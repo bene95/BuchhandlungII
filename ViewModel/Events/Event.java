@@ -1,4 +1,6 @@
-package ViewModel;
+package ViewModel.Events;
+
+import ViewModel.ViewModel;
 
 /**
  * Created by wn00084650 on 08.04.2017.

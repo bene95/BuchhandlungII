@@ -37,6 +37,8 @@ public class Buchhandlung extends JFrame {
     private JButton btnSellBookSubmit;
     private JButton undoButton;
     private JButton btnBuyBookSubmit;
+    private JLabel lblUpdateBookNewTitle;
+    private JLabel lblUpdteBookOldTitle;
 
 
     public Buchhandlung() {

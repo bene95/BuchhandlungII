@@ -1,4 +1,4 @@
-package ViewModel;
+package ViewModel.Events;
 
 /**
  * Created by wn00084650 on 09.04.2017.

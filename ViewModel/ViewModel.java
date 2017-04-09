@@ -1,5 +1,6 @@
 package ViewModel;
 
+import ViewModel.Events.*;
 import com.google.common.eventbus.EventBus;
 import Model.Book;
 
