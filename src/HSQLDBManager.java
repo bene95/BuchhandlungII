@@ -1,9 +1,9 @@
 package src;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import Model.Book;
+
+import java.sql.*;
+import java.util.ArrayList;
 
 public enum HSQLDBManager {
     instance;
@@ -14,11 +14,14 @@ public enum HSQLDBManager {
     private String password = "";
     private String userDir = Configuration.instance.userDirectory;
 
-    //Connect to Database which is located in the lib package (can be changed)
+    Statement stmt = null;
+    ResultSet result = null;
+
+    //Connect to Database which is located Project File
     public void startup() {
         try {
             Class.forName("org.hsqldb.jdbcDriver");
-            String databaseURL = driverName + "database\\database";
+            String databaseURL = driverName + userDir + "\\database\\database";
             connection = DriverManager.getConnection(databaseURL,username,password);
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -37,20 +40,72 @@ public enum HSQLDBManager {
         }
     }
 
-    //TODO the Database calls
-    public void insert() {
-        update("DROP TABLE book");
-        update("CREATE TABLE book (BOOKNAME varchar(20))");
-        update("INSERT INTO book (BOOKNAME) VALUES ('The Witcher')");
-        update("INSERT INTO book (BOOKNAME) VALUES ('Metro2033')");
+    public void insert(Model.Book book) {
+        src.HSQLDBManager.instance.startup();
+        update("INSERT INTO book (title,quantity,uuid) " +
+                "VALUES (\'" + book.getTitel() + "\',\'" + book.getQuantity() + "\',\'" + book.getUuid() + "\');");
+        src.HSQLDBManager.instance.shutdown();
     }
 
-    public void delete() {
-        update(null);
+
+    public void delete(Model.Book book) {
+        src.HSQLDBManager.instance.startup();
+        update("DELETE FROM book WHERE uuid = \'" + book.getUuid() +"\';");
+        src.HSQLDBManager.instance.shutdown();
     }
 
-    public void update() {
-        update(null);
+    public void delete(String uuid) {
+        src.HSQLDBManager.instance.startup();
+        update("DELETE FROM book WHERE uuid = \'" + uuid +"\';");
+        src.HSQLDBManager.instance.shutdown();
+    }
+
+    public void update(Model.Book book) {
+        src.HSQLDBManager.instance.startup();
+        delete(book);
+        insert(book);
+        src.HSQLDBManager.instance.shutdown();
+    }
+
+    // One Book With Title
+    public Book getBookFromDB(String title) {
+        try {
+            src.HSQLDBManager.instance.startup();
+            stmt = connection.createStatement();
+            String getBook = "SELECT title, quantity, uuid FROM book WHERE title = \'" + title +"\';";
+            result = stmt.executeQuery(getBook);
+            src.HSQLDBManager.instance.shutdown();
+            // The result "pointer" always stays behind the result, have to increment once!!
+            result.next();
+            Book b1 = new Book(result.getString("title"), result.getString("quantity"), result.getString("uuid"));
+            System.out.println(b1.getTitel());
+            return b1;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    // Return all books in List
+    public ArrayList<Book> allBookFromDB() {
+        ArrayList<Book> allB = new ArrayList<>();
+        try {
+            src.HSQLDBManager.instance.startup();
+            stmt = connection.createStatement();
+            String getBook = "SELECT title, quantity, uuid FROM book;";
+            result = stmt.executeQuery(getBook);
+            src.HSQLDBManager.instance.shutdown();
+            // The result "pointer" always stays behind the result, have to increment once!!
+            while(result.next()) {
+                Book book = new Book(result.getString(1), result.getString(2), result.getString(3));
+                allB.add(book);
+            }
+            return allB;
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public void shutdown() {
@@ -64,14 +119,18 @@ public enum HSQLDBManager {
     }
 
 
-    /*
+
     //Currently no use
     public void init() {
-        dropTable();
-        createTable();
+        src.HSQLDBManager.instance.startup();
+        update("DROP TABLE book");
+        update("CREATE TABLE book ( title varchar(255)," +
+                                                "quantity varchar(255)," +
+                                                "uuid varchar(255));");
+        src.HSQLDBManager.instance.shutdown();
     }
 
-
+    /*
     Currently no Use, maybe when first starting
     public void dropTable() {
         System.out.println("--- dropTable");
