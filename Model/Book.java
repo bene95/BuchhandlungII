@@ -1,6 +1,10 @@
 package Model;
 public class Book {
     private String titel;
+
+    public Book() {
+    }
+
     private String quantity;
     private String uuid;
 

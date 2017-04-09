@@ -12,13 +12,10 @@ import src.*;
 public class Buchhandlung extends JFrame {
     private JTabbedPane SearchBook;
     private JTextField txtNewBookTitle;
-    private JTextField txtNewBookQuantity;
-    private JTextField txtNewBookUUID;
     private JButton NewBookSubmit;
     private JButton btnUpdateBookSubmit;
     private JTextField txtUpdateBookOldTitle;
-    private JLabel lblUpdateBookNewTitle;
-    private JLabel lblUpdteBookTitle;
+
     private JTextField txtUpdateBookNewTitle;
     private JTextField txtUpdateBookUUID;
     private JLabel lblNewBookTitle;
@@ -39,6 +36,7 @@ public class Buchhandlung extends JFrame {
     private JTextField txtSellBookQuantity;
     private JButton btnSellBookSubmit;
     private JButton undoButton;
+    private JButton btnBuyBookSubmit;
 
 
     public Buchhandlung() {
@@ -51,12 +49,12 @@ public class Buchhandlung extends JFrame {
         setVisible(true);
 
         NewBookSubmit.addActionListener(actionEvent -> {
-            Book book = new Book(txtNewBookTitle.toString(),txtNewBookQuantity.toString(),txtNewBookUUID.toString());
-            Configuration.instance.viewModel.createNewBook(book);
+
+            Configuration.instance.viewModel.createNewBook(txtNewBookTitle.toString());
         });
         btnUpdateBookSubmit.addActionListener(actionEvent -> {
-            Book book = new Book(txtUpdateBookOldTitle.toString(), txtUpdateBookNewTitle.toString(),txtUpdateBookUUID.toString());
-            Configuration.instance.viewModel.updateBook(book);
+
+            Configuration.instance.viewModel.updateBook(txtUpdateBookOldTitle.toString(), txtUpdateBookNewTitle.toString());
         });
         btnDeleteBookSubmit.addActionListener(actionEvent -> {
             Configuration.instance.viewModel.deleteBook(txtDeleteBookTitle.toString());
@@ -64,19 +62,25 @@ public class Buchhandlung extends JFrame {
         btnSearchBookSubmit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-
+                Configuration.instance.viewModel.searchBook(txtSearchBook.toString());
             }
         });
         btnSellBookSubmit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-
+            Configuration.instance.viewModel.sellBook(txtSellBookTitle.toString(),txtSellBookQuantity.toString());
             }
         });
         undoButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                
+                Configuration.instance.viewModel.undo();
+            }
+        });
+        btnBuyBookSubmit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                Configuration.instance.viewModel.buyBook(txtSellBookTitle.toString(),txtSellBookQuantity.toString());
             }
         });
     }

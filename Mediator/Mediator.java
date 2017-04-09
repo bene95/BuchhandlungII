@@ -1,12 +1,11 @@
 package Mediator;
 
-import ViewModel.NewBookEvent;
-import ViewModel.Subscriber;
+import ViewModel.*;
 import com.google.common.eventbus.Subscribe;
 
-/**
- * Created by wn00084650 on 08.04.2017.
- */
+import javax.swing.*;
+
+
 public class Mediator extends Subscriber {
     public Mediator(int id) {
         super(id);
@@ -16,5 +15,25 @@ public class Mediator extends Subscriber {
     public void receive(NewBookEvent newBookEvent){
     //TODO Mediator Implementieren
         System.out.println("test");
-}
+    }
+    @Subscribe
+    public void receive(SearchEvent searchEvent){
+        //TODO Mediator Implementieren
+    }
+    @Subscribe
+    public void receive(UpdateEvent updateEvent){
+        //TODO Mediator Implementieren
+    }
+    @Subscribe
+    public void receive(DeleteEvent deleteEvent){
+        //TODO Mediator Implementieren
+    }
+    @Subscribe
+    public void receive(SellEvent sellEvent){
+        //TODO Mediator Implementieren
+    }
+    @Subscribe
+    public void receive(BuyEvent buyEvent){
+        //TODO Mediator Implementieren
+    }
 }

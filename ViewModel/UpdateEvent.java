@@ -6,10 +6,11 @@ import Model.Book;
  * Created by wn00084650 on 08.04.2017.
  */
 public class UpdateEvent extends Event {
-    private Book book;
-    public UpdateEvent(int id,Book book) {
+   private Book oldTitle,newTitle;
+    public UpdateEvent(int id,Book oldTitle,Book newTitle) {
         super(id);
-        this.book = book;
+        this.oldTitle = oldTitle;
+        this.newTitle = newTitle;
 
     }
 }
