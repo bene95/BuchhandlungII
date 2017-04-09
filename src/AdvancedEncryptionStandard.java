@@ -3,6 +3,7 @@ package src;
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 
+// IST momentan noch ECB >,< Vllt
 public class AdvancedEncryptionStandard
 {
     private byte[] key;
