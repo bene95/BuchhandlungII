@@ -1,11 +1,54 @@
 package src;
+import org.apache.commons.codec.binary.Base64;
 
 import javax.crypto.Cipher;
+import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
-// IST momentan noch ECB >,< Vllt
+// CBC
 public class AdvancedEncryptionStandard
 {
+
+    public static String encrypt(String key, String initVector, String value) {
+        try {
+            IvParameterSpec iv = new IvParameterSpec(initVector.getBytes("UTF-8"));
+            SecretKeySpec skeySpec = new SecretKeySpec(key.getBytes("UTF-8"), "AES");
+
+            Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5PADDING");
+            cipher.init(Cipher.ENCRYPT_MODE, skeySpec, iv);
+
+            byte[] encrypted = cipher.doFinal(value.getBytes());
+            System.out.println("encrypted string: "
+                    + Base64.encodeBase64String(encrypted));
+
+            return Base64.encodeBase64String(encrypted);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
+        return null;
+    }
+
+    public static String decrypt(String key, String initVector, String encrypted) {
+        try {
+            IvParameterSpec iv = new IvParameterSpec(initVector.getBytes("UTF-8"));
+            SecretKeySpec skeySpec = new SecretKeySpec(key.getBytes("UTF-8"), "AES");
+
+            Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5PADDING");
+            cipher.init(Cipher.DECRYPT_MODE, skeySpec, iv);
+
+            byte[] original = cipher.doFinal(Base64.decodeBase64(encrypted));
+
+            return new String(original);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
+        return null;
+    }
+
+
+    /*
     private byte[] key;
 
     private static final String ALGORITHM = "AES";
@@ -20,6 +63,7 @@ public class AdvancedEncryptionStandard
      *
      * @param plainText The plain text to encrypt
      */
+    /*
     public byte[] encrypt(byte[] plainText) throws Exception
     {
         SecretKeySpec secretKey = new SecretKeySpec(key, ALGORITHM);
@@ -28,12 +72,14 @@ public class AdvancedEncryptionStandard
 
         return cipher.doFinal(plainText);
     }
-
-    /**
+    */
+    /*
      * Decrypts the given byte array
      *
      * @param cipherText The data to decrypt
      */
+
+    /*
     public byte[] decrypt(byte[] cipherText) throws Exception
     {
         SecretKeySpec secretKey = new SecretKeySpec(key, ALGORITHM);
@@ -42,4 +88,6 @@ public class AdvancedEncryptionStandard
 
         return cipher.doFinal(cipherText);
     }
+    */
+
 }

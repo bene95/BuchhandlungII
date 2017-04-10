@@ -10,9 +10,13 @@ public enum HSQLDBManager {
 
     private Connection connection = null;
     private String driverName = "jdbc:hsqldb:file:";
-    private String username = "SA";
-    private String password = "";
+    private String username = "ROOT";
+    private String password = "NnaBm1EKxVRVPGM6AAnBLQ==";
     private String userDir = Configuration.instance.userDirectory;
+
+    //AES values
+    private String key = "Bar12345Bar12345"; // 128 bit key
+    private String initVector = "RandomInitVector"; // 16 bytes IV
 
     Statement stmt = null;
     ResultSet result = null;
@@ -22,7 +26,8 @@ public enum HSQLDBManager {
         try {
             Class.forName("org.hsqldb.jdbcDriver");
             String databaseURL = driverName + userDir + "\\database\\database";
-            connection = DriverManager.getConnection(databaseURL,username,password);
+            connection = DriverManager.getConnection(databaseURL,username,AdvancedEncryptionStandard.decrypt(key, initVector,
+                    password));
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -30,41 +35,37 @@ public enum HSQLDBManager {
     //Executes Statement
     public synchronized void update(String sqlStatement) {
         try {
+            src.HSQLDBManager.instance.startup();
             Statement statement = connection.createStatement();
             int result = statement.executeUpdate(sqlStatement);
             if (result == -1)
                 System.out.println("error executing " + sqlStatement);
             statement.close();
+            src.HSQLDBManager.instance.shutdown();
         } catch (SQLException sqle) {
             System.out.println(sqle.getMessage());
         }
     }
 
     public void insert(Model.Book book) {
-        src.HSQLDBManager.instance.startup();
+
         update("INSERT INTO book (title,quantity,uuid) " +
                 "VALUES (\'" + book.getTitel() + "\',\'" + book.getQuantity() + "\',\'" + book.getUuid() + "\');");
-        src.HSQLDBManager.instance.shutdown();
+
     }
 
 
     public void delete(Model.Book book) {
-        src.HSQLDBManager.instance.startup();
         update("DELETE FROM book WHERE uuid = \'" + book.getUuid() +"\';");
-        src.HSQLDBManager.instance.shutdown();
     }
 
     public void delete(String uuid) {
-        src.HSQLDBManager.instance.startup();
         update("DELETE FROM book WHERE uuid = \'" + uuid +"\';");
-        src.HSQLDBManager.instance.shutdown();
     }
 
     public void update(Model.Book book) {
-        src.HSQLDBManager.instance.startup();
         delete(book);
         insert(book);
-        src.HSQLDBManager.instance.shutdown();
     }
 
     // One Book With Title
@@ -122,13 +123,14 @@ public enum HSQLDBManager {
 
     //Currently no use
     public void init() {
-        src.HSQLDBManager.instance.startup();
+        password = AdvancedEncryptionStandard.encrypt(key,initVector,"ROOT");
         update("DROP TABLE book");
         update("CREATE TABLE book ( title varchar(255)," +
                                                 "quantity varchar(255)," +
                                                 "uuid varchar(255));");
-        src.HSQLDBManager.instance.shutdown();
     }
+
+
 
     /*
     Currently no Use, maybe when first starting
@@ -148,6 +150,17 @@ public enum HSQLDBManager {
         sqlStringBuilder.append(" )");
         update(sqlStringBuilder.toString());
     }
+
+
+      AES
+        String key = "Bar12345Bar12345"; // 128 bit key
+        String initVector = "RandomInitVector"; // 16 bytes IV
+        System.out.println(AdvancedEncryptionStandard.encrypt(key,initVector,"Hello World"));
+
+        System.out.println(AdvancedEncryptionStandard.decrypt(key, initVector,
+                "9MU7vSBqfzPnj7iWvvfsEw"));
+
+
     */
 
 }

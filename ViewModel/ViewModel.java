@@ -1,9 +1,8 @@
 package ViewModel;
 
+import Model.Book;
 import ViewModel.Events.*;
 import com.google.common.eventbus.EventBus;
-import Model.Book;
-import src.Configuration;
 
 public class ViewModel {
     private int eventCounter = 0;
@@ -13,8 +12,6 @@ public class ViewModel {
     this.id = id;
     this.eventBus = eventBus;
     }
-
-
 
     public void addSubscriber(Subscriber subscriber) {
         eventBus.register(subscriber);

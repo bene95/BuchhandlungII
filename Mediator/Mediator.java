@@ -22,6 +22,7 @@ public class Mediator extends Subscriber {
     @Subscribe
     public void receive(UpdateEvent updateEvent){
         //TODO Mediator Implementieren
+
     }
     @Subscribe
     public void receive(DeleteEvent deleteEvent){

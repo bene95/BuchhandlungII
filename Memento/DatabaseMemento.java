@@ -1,22 +1,21 @@
 package Memento;
 
-import src.HSQLDBManager;
+import Model.Book;
 
-/**
- * Created by wn00084650 on 09.04.2017.
- */
+import java.util.ArrayList;
+
 public class DatabaseMemento {
-    private String dataBase;
+    private ArrayList<Book> dataBase;
 
-    public DatabaseMemento(String dataBase) {
+    public DatabaseMemento(ArrayList<Book> dataBase) {
         this.dataBase = dataBase;
     }
 
-    public String getHsqldbManager() {
+    public ArrayList<Book> getHsqldbManager() {
         return dataBase;
     }
 
-    public void setHsqldbManager(String  dataBase) {
+    public void setHsqldbManager(ArrayList<Book>  dataBase) {
         this.dataBase = dataBase;
     }
 }
