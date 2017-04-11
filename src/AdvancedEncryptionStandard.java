@@ -5,7 +5,7 @@ import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
-// CBC
+// CBC from http://stackoverflow.com/questions/15554296/simple-java-aes-encrypt-decrypt-example
 public class AdvancedEncryptionStandard
 {
 
@@ -47,7 +47,7 @@ public class AdvancedEncryptionStandard
         return null;
     }
 
-
+}
     /*
     private byte[] key;
 
@@ -90,4 +90,4 @@ public class AdvancedEncryptionStandard
     }
     */
 
-}
+

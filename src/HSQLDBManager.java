@@ -15,7 +15,8 @@ public enum HSQLDBManager {
     private String userDir = Configuration.instance.userDirectory;
 
     //AES values
-    private String key = "Bar12345Bar12345"; // 128 bit key
+    //private String key = "Bar12345Bar12345"; // 128 bit key
+    private String key = "PasswordPassword";
     private String initVector = "RandomInitVector"; // 16 bytes IV
 
     Statement stmt = null;

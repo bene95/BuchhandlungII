@@ -3,6 +3,7 @@ package src;
 import Mediator.Mediator;
 import Memento.Memento;
 import Model.Book;
+import Repository.SoftwareRepository;
 import View.Buchhandlung;
 
 import java.util.ArrayList;
@@ -26,8 +27,6 @@ public class Main {
 
         ArrayList<Book> save = HSQLDBManager.instance.allBookFromDB();
 
-        System.out.println(save.get(0).getTitel());
-
         /*
         //src.HSQLDBManager.instance.delete(book);
         //HSQLDBManager.instance.getBookFromDB("Harry");
@@ -45,8 +44,11 @@ public class Main {
         Configuration.instance.viewModel.addSubscriber(memento);
         //Configuration.instance.viewModel.undo();
 
-
-
+        ArrayList<String> s1 = new ArrayList<>();
+        SoftwareRepository r1 = new SoftwareRepository();
+        r1.getMethod("ola");
+        s1 = r1.getMethodList();
+        System.out.println(s1.get(0));
 
         System.out.println(Configuration.instance.userDirectory);
     }
