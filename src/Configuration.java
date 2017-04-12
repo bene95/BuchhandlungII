@@ -1,10 +1,8 @@
 package src;
 
-import Mediator.Mediator;
+import Repository.MethodRepository;
 import ViewModel.ViewModel;
 import com.google.common.eventbus.EventBus;
-
-import java.util.ArrayList;
 
 public enum Configuration {
     instance;
@@ -14,6 +12,9 @@ public enum Configuration {
     public EventBus eventBus = new EventBus("ECB-"+1);
 
     public ViewModel viewModel = new ViewModel(1,eventBus);
+
+
+    public MethodRepository methodRepository = new MethodRepository();
 
 
 }

@@ -1,5 +1,7 @@
 package Repository;
 
+import Model.Book;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -7,8 +9,12 @@ import java.util.ArrayList;
 public class SoftwareRepository {
 
 
-
+    private Book book;
     private ArrayList<String> methodList = new ArrayList<>();
+
+    public SoftwareRepository(Book book){
+        this.book = book;
+    }
 
     public void setMethodList(ArrayList<String> methodList) {
         this.methodList = methodList;
@@ -19,7 +25,18 @@ public class SoftwareRepository {
 
         public void getMethod(String methodName){
             int counter = 0;
-            while(null != Archive.intValue(counter))
+            Archive archive = (Archive) Archive.intValue(counter);
+            String name = "lib."+ archive +".src." + "Component";
+            try {
+                Class cl = Class.forName(name);
+                //System.out.println("class " + name);
+                //System.out.println("Its methods:");
+                printMethods(cl);
+                executeMethods(cl,"insert");
+            } catch (ClassNotFoundException e) {
+                System.out.println("Class not found.");
+            }
+            /*while(null != Archive.intValue(counter))
             {
                 Archive archive = (Archive) Archive.intValue(counter);
                 String name = "lib."+ archive +".src." + "Component";
@@ -28,12 +45,11 @@ public class SoftwareRepository {
                     //System.out.println("class " + name);
                     //System.out.println("Its methods:");
                      printMethods(cl);
-                    //executeMethods(cl,methodName);
                 } catch (ClassNotFoundException e) {
                     System.out.println("Class not found.");
                 }
                 counter ++;
-            }
+            }*/
         }
 
         // Prints all Methods
@@ -61,12 +77,13 @@ public class SoftwareRepository {
 
         }
 
+
         public void executeMethods(Class cl, String methodName){
             try {
                 Object obj = cl.newInstance();
-                Method method = cl.getDeclaredMethod(methodName);
+                Method method = cl.getDeclaredMethod(methodName, Book.class);
                 try {
-                    method.invoke(obj,null);
+                    method.invoke(obj, book);
                 } catch (IllegalAccessException e) {
                     e.printStackTrace();
                 } catch (InvocationTargetException e) {

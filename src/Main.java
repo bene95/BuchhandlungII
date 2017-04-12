@@ -45,7 +45,7 @@ public class Main {
         //Configuration.instance.viewModel.undo();
 
         ArrayList<String> s1 = new ArrayList<>();
-        SoftwareRepository r1 = new SoftwareRepository();
+        SoftwareRepository r1 = new SoftwareRepository(book4);
         r1.getMethod("ola");
         s1 = r1.getMethodList();
         System.out.println(s1.get(0));
