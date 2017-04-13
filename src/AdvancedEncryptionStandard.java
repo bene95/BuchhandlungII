@@ -1,6 +1,4 @@
 package src;
-import org.apache.commons.codec.binary.Base64;
-
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
@@ -21,7 +19,8 @@ public class AdvancedEncryptionStandard
             //System.out.println("encrypted string: "
                     //+ Base64.encodeBase64String(encrypted));
 
-            return Base64.encodeBase64String(encrypted);
+            //return Base64.encodeBase64String(encrypted);
+            return java.util.Base64.getEncoder().encodeToString(encrypted);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -37,7 +36,8 @@ public class AdvancedEncryptionStandard
             Cipher cipher = Cipher.getInstance("AES/CBC/PKCS5PADDING");
             cipher.init(Cipher.DECRYPT_MODE, skeySpec, iv);
 
-            byte[] original = cipher.doFinal(Base64.decodeBase64(encrypted));
+            //byte[] original = cipher.doFinal(Base64.decodeBase64(encrypted));
+            byte[] original= cipher.doFinal(java.util.Base64.getDecoder().decode(encrypted));
 
             return new String(original);
         } catch (Exception ex) {

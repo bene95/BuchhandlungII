@@ -1,6 +1,5 @@
 package src;
 
-import Repository.MethodRepository;
 import ViewModel.ViewModel;
 import com.google.common.eventbus.EventBus;
 
@@ -14,7 +13,7 @@ public enum Configuration {
     public ViewModel viewModel = new ViewModel(1,eventBus);
 
 
-    public MethodRepository methodRepository = new MethodRepository();
+    //public MethodRepository methodRepository = new MethodRepository();
 
 
 }

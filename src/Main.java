@@ -1,18 +1,10 @@
 package src;
 
-import Mediator.Mediator;
-import Memento.Memento;
-import Model.Book;
-import Repository.SoftwareRepository;
-import View.Buchhandlung;
-
-import java.util.ArrayList;
-
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-
+        /*
         HSQLDBManager.instance.init();
         System.out.println(Configuration.instance.userDirectory);
         Book book = new Book("Metro2033","2","1");
@@ -25,16 +17,17 @@ public class Main {
         src.HSQLDBManager.instance.insert(book2);
         src.HSQLDBManager.instance.insert(book3);
 
+
         ArrayList<Book> save = HSQLDBManager.instance.allBookFromDB();
 
-        /*
+
         //src.HSQLDBManager.instance.delete(book);
         //HSQLDBManager.instance.getBookFromDB("Harry");
         ArrayList<Book> books = HSQLDBManager.instance.allBookFromDB();
         System.out.println(books.get(0).getTitel());
         System.out.println(books.get(1).getTitel());
         System.out.println(books.get(2).getTitel());
-        */
+
         Buchhandlung buchhandlung = new Buchhandlung();
         Mediator mediator = new Mediator(1);
         Memento memento = new Memento(2,save);
@@ -50,6 +43,10 @@ public class Main {
         s1 = r1.getMethodList();
         System.out.println(s1.get(0));
 
-        System.out.println(Configuration.instance.userDirectory);
+        System.out.println(Configuration.instance.userDirectory);*/
+
+
+
+
     }
 }
