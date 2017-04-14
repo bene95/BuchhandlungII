@@ -107,8 +107,21 @@ public class SoftwareRepository {
             return true;
     }
 
-    public Class getClass(String persistence) {
-        return null;
+    public Class getClass(String archive) {
+            for (int i = 0 ; i<=2 ; i++){
+                if(archive == (String) Archive.intValue(i)) {
+                    String name = "lib."+ archive +".src." + "Component";
+                    try {
+                        Class cl = Class.forName(name);
+                        return cl;
+                    } catch (ClassNotFoundException e) {
+                        e.printStackTrace();
+                        return null;
+                    }
+                }
+            }
+            return null;
+
     }
 }
 
