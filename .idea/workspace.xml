@@ -5,44 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95d41c20-8335-4d68-a271-91ea61ff79b5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Persistence/hsqldb.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Book.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Persistence.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Book.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Book__2_.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Book__3_.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Book__4_.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Book__5_.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ModelNew/ModelNew.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Persistence/src/AdvancedEncryptionStandard.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Persistence/src/BookP.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Persistence/src/Configuration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Persistence/src/HSQLDBManager.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Model/Book.java" afterPath="$PROJECT_DIR$/ModelNew/src/com/book/Book.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/Persistence/src/Component.java" afterPath="$PROJECT_DIR$/Persistence/src/Component.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/Persistence/src/IComponent.java" afterPath="$PROJECT_DIR$/Persistence/src/IComponent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/HSQLDBManager.java" afterPath="$PROJECT_DIR$/Repository/HSQLDBManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Persistence/Persistence.jar" afterPath="$PROJECT_DIR$/lib/Persistence/Persistence.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BuchhandlungII.iml" afterPath="$PROJECT_DIR$/BuchhandlungII.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mediator/Mediator.java" afterPath="$PROJECT_DIR$/Mediator/Mediator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Memento/DatabaseMemento.java" afterPath="$PROJECT_DIR$/Memento/DatabaseMemento.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Memento/Memento.java" afterPath="$PROJECT_DIR$/Memento/Memento.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Parser/Parser.java" afterPath="$PROJECT_DIR$/Parser/Parser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Repository/MethodRepository.java" afterPath="$PROJECT_DIR$/Repository/MethodRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Repository/SoftwareRepository.java" afterPath="$PROJECT_DIR$/Repository/SoftwareRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/Buchhandlung.form" afterPath="$PROJECT_DIR$/View/Buchhandlung.form" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/Buchhandlung.java" afterPath="$PROJECT_DIR$/View/Buchhandlung.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewModel/Events/BuyEvent.java" afterPath="$PROJECT_DIR$/ViewModel/Events/BuyEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewModel/Events/NewBookEvent.java" afterPath="$PROJECT_DIR$/ViewModel/Events/NewBookEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewModel/Events/SearchEvent.java" afterPath="$PROJECT_DIR$/ViewModel/Events/SearchEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewModel/Events/SellEvent.java" afterPath="$PROJECT_DIR$/ViewModel/Events/SellEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewModel/Events/UpdateEvent.java" afterPath="$PROJECT_DIR$/ViewModel/Events/UpdateEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewModel/ViewModel.java" afterPath="$PROJECT_DIR$/ViewModel/ViewModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/database.properties" afterPath="$PROJECT_DIR$/database/database.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Configuration.java" afterPath="$PROJECT_DIR$/src/Configuration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Persistence/src/HSQLDBManager.java" afterPath="$PROJECT_DIR$/Persistence/src/HSQLDBManager.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -123,14 +87,14 @@
       <file leaf-file-name="HSQLDBManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Persistence/src/HSQLDBManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+            <state relative-caret-position="493">
+              <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1492190876946" expanded="true" signature="2818:2887" ph="SELECT title... book" />
-                <marker date="1492190876946" expanded="true" signature="3666:3704" ph="SELECT title... book" />
-                <marker date="1492190876946" expanded="true" signature="4671:4750" ph="SELECT title... book" />
-                <marker date="1492190876946" expanded="true" signature="5493:5572" ph="SELECT title... book" />
+                <marker date="1492191437664" expanded="true" signature="2740:2809" ph="SELECT title... book" />
+                <marker date="1492191437664" expanded="true" signature="3588:3626" ph="SELECT title... book" />
+                <marker date="1492191437664" expanded="true" signature="4593:4672" ph="SELECT title... book" />
+                <marker date="1492191437664" expanded="true" signature="5415:5494" ph="SELECT title... book" />
               </folding>
             </state>
           </provider>
@@ -236,8 +200,8 @@
         <option value="$PROJECT_DIR$/ViewModel/Events/BuyEvent.java" />
         <option value="$PROJECT_DIR$/Repository/MethodRepository.java" />
         <option value="$PROJECT_DIR$/Persistence/src/Component.java" />
-        <option value="$PROJECT_DIR$/Persistence/src/HSQLDBManager.java" />
         <option value="$PROJECT_DIR$/Persistence/src/BookP.java" />
+        <option value="$PROJECT_DIR$/Persistence/src/HSQLDBManager.java" />
       </list>
     </option>
   </component>
@@ -248,10 +212,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="132" />
+    <option name="y" value="194" />
+    <option name="width" value="1279" />
+    <option name="height" value="692" />
   </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="2" />
@@ -367,28 +331,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Persistence" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Buchhandlung 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Buchhandlung 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Persistence" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Book.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="book" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -522,11 +464,11 @@
       <recent name="lib.Persistence.src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hro\Desktop\Buchhandlung 2\Persistence" />
+      <recent name="C:\Users\hro\Desktop\Buchhandlung 2\Persistence\src" />
       <recent name="C:\Users\hro\Desktop\Buchhandlung 2\Repository" />
       <recent name="C:\Users\hro\Desktop\Buchhandlung 2" />
       <recent name="C:\Users\wn00084650\Desktop\Buchhandlung\BuchhandlungII\lib" />
-      <recent name="C:\Users\wn00084650\Desktop\Buchhandlung\BuchhandlungII" />
-      <recent name="C:\Users\wn00084650\Desktop\Buchhandlung\BuchhandlungII\View" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -984,7 +926,7 @@
       <workItem from="1491834958991" duration="1567000" />
       <workItem from="1491886975025" duration="36677000" />
       <workItem from="1492165843787" duration="7093000" />
-      <workItem from="1492173088926" duration="18116000" />
+      <workItem from="1492173088926" duration="18562000" />
     </task>
     <task id="LOCAL-00001" summary="GUI wird angezeigt">
       <created>1491658683314</created>
@@ -1112,14 +1054,21 @@
       <option name="project" value="LOCAL" />
       <updated>1492175195314</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="pfusch">
+      <created>1492191264901</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1492191264901</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104095000" />
+    <option name="totallyTimeSpent" value="104541000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="132" y="194" width="1279" height="692" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1129,15 +1078,15 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28541225" sideWeight="0.5229167" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28522336" sideWeight="0.5241489" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28541225" sideWeight="0.47708333" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46391752" sideWeight="0.47585115" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.49583334" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16354166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24861442" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.49375" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1177,7 +1126,8 @@
     <MESSAGE value="Data base Sell und Buy eingefügt" />
     <MESSAGE value="getClass" />
     <MESSAGE value="du weißt" />
-    <option name="LAST_COMMIT_MESSAGE" value="du weißt" />
+    <MESSAGE value="pfusch" />
+    <option name="LAST_COMMIT_MESSAGE" value="pfusch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1672,14 +1622,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Persistence/src/HSQLDBManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+        <state relative-caret-position="493">
+          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1492190876946" expanded="true" signature="2818:2887" ph="SELECT title... book" />
-            <marker date="1492190876946" expanded="true" signature="3666:3704" ph="SELECT title... book" />
-            <marker date="1492190876946" expanded="true" signature="4671:4750" ph="SELECT title... book" />
-            <marker date="1492190876946" expanded="true" signature="5493:5572" ph="SELECT title... book" />
+            <marker date="1492191437664" expanded="true" signature="2740:2809" ph="SELECT title... book" />
+            <marker date="1492191437664" expanded="true" signature="3588:3626" ph="SELECT title... book" />
+            <marker date="1492191437664" expanded="true" signature="4593:4672" ph="SELECT title... book" />
+            <marker date="1492191437664" expanded="true" signature="5415:5494" ph="SELECT title... book" />
           </folding>
         </state>
       </provider>
