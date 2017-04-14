@@ -1,22 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95d41c20-8335-4d68-a271-91ea61ff79b5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Model1/Book.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Parser/Parser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Parser/PersistenceParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Parser/SearchParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Parser/TransactionParser.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hsqldb.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="95d41c20-8335-4d68-a271-91ea61ff79b5" name="Default" comment="Parser eingebaut">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Mediator/Mediator.java" afterPath="$PROJECT_DIR$/Mediator/Mediator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Memento/Memento.java" afterPath="$PROJECT_DIR$/Memento/Memento.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Repository/MethodRepository.java" afterPath="$PROJECT_DIR$/Repository/MethodRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Repository/SoftwareRepository.java" afterPath="$PROJECT_DIR$/Repository/SoftwareRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ViewModel/Events/NewBookEvent.java" afterPath="$PROJECT_DIR$/ViewModel/Events/NewBookEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,6 +21,25 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="HSQLDBManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/HSQLDBManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="method#startup#0;class#HSQLDBManager#0" expanded="false" />
+                <element signature="method#update#0;class#HSQLDBManager#0" expanded="false" />
+                <element signature="method#allBookFromDB#0;class#HSQLDBManager#0" expanded="false" />
+                <element signature="method#shutdown#0;class#HSQLDBManager#0" expanded="false" />
+                <marker date="1492172706373" expanded="true" signature="2607:2676" ph="SELECT title... book" />
+                <marker date="1492172706373" expanded="true" signature="3463:3501" ph="SELECT title... book" />
+                <marker date="1492172706373" expanded="true" signature="4476:4555" ph="SELECT title... book" />
+                <marker date="1492172706373" expanded="true" signature="5306:5385" ph="SELECT title... book" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -43,16 +48,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Memento.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Memento/Memento.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -79,7 +74,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Mediator.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Mediator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Mediator/Mediator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
@@ -105,7 +100,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MethodRepository.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MethodRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Repository/MethodRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -891,7 +886,7 @@
       <workItem from="1491834958991" duration="1567000" />
       <workItem from="1491886975025" duration="36677000" />
       <workItem from="1492165843787" duration="832000" />
-      <workItem from="1492166772066" duration="5502000" />
+      <workItem from="1492166772066" duration="5975000" />
     </task>
     <task id="LOCAL-00001" summary="GUI wird angezeigt">
       <created>1491658683314</created>
@@ -984,11 +979,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492166085835</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Parser eingebaut">
+      <created>1492172644169</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1492172644169</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85220000" />
+    <option name="totallyTimeSpent" value="85693000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1386" height="788" extended-state="0" />
@@ -1003,7 +1005,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28541225" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1045,7 +1047,8 @@
     <MESSAGE value="Komponenten eingefügt, Liste von Funktionen und ausführen implementiert (Beim ausfphren übergebe ich noch keine Parameter, muss man noch irgendwie lösen :P)&#10;" />
     <MESSAGE value="Komponenten Angepasst" />
     <MESSAGE value="Ohne externe Lib Aes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ohne externe Lib Aes" />
+    <MESSAGE value="Parser eingebaut" />
+    <option name="LAST_COMMIT_MESSAGE" value="Parser eingebaut" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1129,6 +1132,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1164,7 +1168,7 @@
         <state relative-caret-position="85">
           <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1198,23 +1202,7 @@
         <state relative-caret-position="816">
           <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/HSQLDBManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="67" column="10" lean-forward="false" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
-          <folding>
-            <element signature="method#startup#0;class#HSQLDBManager#0" expanded="false" />
-            <element signature="method#update#0;class#HSQLDBManager#0" expanded="false" />
-            <element signature="method#allBookFromDB#0;class#HSQLDBManager#0" expanded="false" />
-            <element signature="method#shutdown#0;class#HSQLDBManager#0" expanded="false" />
-            <element signature="method#init#0;class#HSQLDBManager#0" expanded="false" />
-            <marker date="1492013723595" expanded="true" signature="2454:2523" ph="SELECT title... book" />
-            <marker date="1492013723595" expanded="true" signature="3308:3346" ph="SELECT title... book" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1239,7 +1227,7 @@
         <state relative-caret-position="323">
           <caret line="24" column="61" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="61" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1336,6 +1324,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Repository/MethodRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HSQLDBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="method#startup#0;class#HSQLDBManager#0" expanded="false" />
+            <element signature="method#update#0;class#HSQLDBManager#0" expanded="false" />
+            <element signature="method#allBookFromDB#0;class#HSQLDBManager#0" expanded="false" />
+            <element signature="method#shutdown#0;class#HSQLDBManager#0" expanded="false" />
+            <marker date="1492172706373" expanded="true" signature="2607:2676" ph="SELECT title... book" />
+            <marker date="1492172706373" expanded="true" signature="3463:3501" ph="SELECT title... book" />
+            <marker date="1492172706373" expanded="true" signature="4476:4555" ph="SELECT title... book" />
+            <marker date="1492172706373" expanded="true" signature="5306:5385" ph="SELECT title... book" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Mediator/Mediator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1345,14 +1358,6 @@
             <element signature="e#791#792#0" expanded="true" />
             <element signature="e#836#837#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Repository/MethodRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
