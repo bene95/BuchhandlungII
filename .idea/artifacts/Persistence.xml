@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="Persistence">
-    <output-path>$PROJECT_DIR$/Persistence</output-path>
-    <root id="archive" name="Persistence.jar">
-      <element id="module-output" name="Persistence" />
-      <element id="library" level="project" name="Book" />
-    </root>
-  </artifact>
-</component>

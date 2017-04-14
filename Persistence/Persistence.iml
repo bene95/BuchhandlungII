@@ -7,13 +7,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-<<<<<<< HEAD
-    <orderEntry type="library" name="Book" level="project" />
-    <orderEntry type="library" name="gson-2.2.1 (2)" level="project" />
-=======
-    <orderEntry type="library" name="hsqldb" level="project" />
-    <orderEntry type="library" name="Book (2)" level="project" />
-    <orderEntry type="library" name="Book (5)" level="project" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
   </component>
 </module>

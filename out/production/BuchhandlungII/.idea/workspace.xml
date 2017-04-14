@@ -1,45 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
   <component name="ChangeListManager">
-    <list default="true" id="db0acefa-8c37-4767-a3eb-efc4f2e69da7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_2_1__2_.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Persistence/Persistence.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Persistence/src/Book.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Persistence/src/FormatParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FormatParser.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/Book.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Book__2_.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Book__3_.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Book__4_.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Book__5_.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/commons_codec_1_10.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/guava.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Persistence/src/BookP.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Persistence.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Persistence.xml" />
+    <list default="true" id="647915d2-1dd7-495f-b3cf-331ba01be24f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/Persistence.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/gson_2_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/gson_2_2_1__2_.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/hsqldb.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Persistence/AdvancedEncryptionStandard.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Persistence/Book.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Persistence/Book.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Persistence/BookP.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Persistence/Component$Port.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Persistence/Component.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Persistence/Configuration.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Persistence/FormatParser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Persistence/HSQLDBManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Persistence/IComponent.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Book.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Book.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BuchhandlungII.iml" afterPath="$PROJECT_DIR$/BuchhandlungII.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ModelNew/ModelNew.iml" afterPath="$PROJECT_DIR$/ModelNew/ModelNew.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Persistence/src/AdvancedEncryptionStandard.java" afterPath="$PROJECT_DIR$/Persistence/src/AdvancedEncryptionStandard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Persistence/src/Component.java" afterPath="$PROJECT_DIR$/Persistence/src/Component.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Persistence/src/Configuration.java" afterPath="$PROJECT_DIR$/Persistence/src/Configuration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Persistence/Persistence.iml" afterPath="$PROJECT_DIR$/Persistence/Persistence.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Persistence/src/HSQLDBManager.java" afterPath="$PROJECT_DIR$/Persistence/src/HSQLDBManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Persistence/src/IComponent.java" afterPath="$PROJECT_DIR$/Persistence/src/IComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Repository/MethodRepository.java" afterPath="$PROJECT_DIR$/Repository/MethodRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/Buchhandlung.java" afterPath="$PROJECT_DIR$/View/Buchhandlung.java" />
-=======
-  <component name="BookmarkManager">
-    <bookmark url="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/ClassLoader.java" description="*   class.  &lt;/p&gt;&lt;/li&gt;" line="374" />
-  </component>
-  <component name="ChangeListManager">
-    <list default="true" id="95d41c20-8335-4d68-a271-91ea61ff79b5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,205 +33,32 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-<<<<<<< HEAD
-=======
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Buchhandlung 2$Main.coverage" NAME="Main Coverage Results" MODIFIED="1491911727069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-  </component>
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-<<<<<<< HEAD
     <leaf>
-      <file leaf-file-name="Component.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Persistence/src/Component.java">
+      <file leaf-file-name="HSQLDBManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Persistence/src/HSQLDBManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="60" column="36" lean-forward="false" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
-=======
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Component.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Persistence/src/Component.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
+            <state relative-caret-position="141">
+              <caret line="53" column="29" lean-forward="false" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1492201358006" expanded="true" signature="2766:2835" ph="SELECT title... book" />
+                <marker date="1492201358006" expanded="true" signature="3614:3652" ph="SELECT title... book" />
+                <marker date="1492201358006" expanded="true" signature="4619:4698" ph="SELECT title... book" />
+                <marker date="1492201358006" expanded="true" signature="5441:5520" ph="SELECT title... book" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-      <file leaf-file-name="IComponent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Persistence/src/IComponent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Buchhandlung.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/View/Buchhandlung.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-=======
-      <file leaf-file-name="Buchhandlung.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/View/Buchhandlung.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="53" column="71" lean-forward="true" selection-start-line="53" selection-start-column="71" selection-end-line="53" selection-end-column="71" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="FormatParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FormatParser.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#638#644#0" expanded="true" />
-=======
-      <file leaf-file-name="SoftwareRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Repository/SoftwareRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#executeMethods#0;class#SoftwareRepository#0" expanded="false" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="MethodRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Repository/MethodRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="37" column="42" lean-forward="false" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#604#610#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FormatParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Persistence/src/FormatParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-=======
-      <file leaf-file-name="BuyEvent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ViewModel/Events/BuyEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="Subscriber.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/out/production/BuchhandlungII/lib/guava.jar!/com/google/common/eventbus/Subscriber.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-              <folding />
-=======
-      <file leaf-file-name="MethodRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Repository/MethodRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#989#995#0" expanded="true" />
-                <element signature="e#1066#1081#0" expanded="true" />
-              </folding>
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="Dispatcher.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/out/production/BuchhandlungII/lib/guava.jar!/com/google/common/eventbus/Dispatcher.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-              <folding />
-=======
-      <file leaf-file-name="HSQLDBManager.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Persistence/src/HSQLDBManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="51" column="50" lean-forward="false" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1492190876946" expanded="true" signature="2740:2809" ph="SELECT title... book" />
-                <marker date="1492190876946" expanded="true" signature="3588:3626" ph="SELECT title... book" />
-                <marker date="1492190876946" expanded="true" signature="4593:4672" ph="SELECT title... book" />
-                <marker date="1492190876946" expanded="true" signature="5415:5494" ph="SELECT title... book" />
-              </folding>
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="EventBus.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/out/production/BuchhandlungII/lib/guava.jar!/com/google/common/eventbus/EventBus.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-              <folding />
-=======
-      <file leaf-file-name="BookP.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Persistence/src/BookP.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-              <folding>
-                <element signature="e#151#152#0" expanded="true" />
-                <element signature="e#186#187#0" expanded="true" />
-              </folding>
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="ViewModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ViewModel/ViewModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-=======
-      <file leaf-file-name="Configuration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Persistence/src/Configuration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
               <folding />
             </state>
           </provider>
@@ -255,29 +66,7 @@
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-<<<<<<< HEAD
-=======
-        <option value="Enum" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-<<<<<<< HEAD
   <component name="Git.Settings">
-=======
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>inst</find>
-      <find>book</find>
-    </findStrings>
-  </component>
-  <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="MERGE" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -288,71 +77,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/Persistence/src/AdvancedEncryptionStandard.java" />
-        <option value="$PROJECT_DIR$/Persistence/src/Configuration.java" />
-        <option value="$PROJECT_DIR$/Persistence/src/Book.java" />
         <option value="$PROJECT_DIR$/Persistence/src/HSQLDBManager.java" />
-        <option value="$PROJECT_DIR$/View/Buchhandlung.java" />
-        <option value="$PROJECT_DIR$/FormatParser.java" />
-        <option value="$PROJECT_DIR$/src/FormatParser.java" />
-        <option value="$PROJECT_DIR$/Repository/MethodRepository.java" />
-        <option value="$PROJECT_DIR$/Persistence/src/FormatParser.java" />
-        <option value="$PROJECT_DIR$/Persistence/src/IComponent.java" />
-        <option value="$PROJECT_DIR$/Persistence/src/Component.java" />
-=======
-        <option value="$PROJECT_DIR$/ViewModel/SellEvent.java" />
-        <option value="$PROJECT_DIR$/ViewModel/UpdateEvent.java" />
-        <option value="$PROJECT_DIR$/ViewModel/SearchEvent.java" />
-        <option value="$PROJECT_DIR$/View/Buchhandlung.java" />
-        <option value="$PROJECT_DIR$/View/Buchhandlung.form" />
-        <option value="$PROJECT_DIR$/ViewModel/Events/SaveEvent.java" />
-        <option value="$PROJECT_DIR$/Memento/DatabaseCareTaker.java" />
-        <option value="$PROJECT_DIR$/ViewModel/Events/UndoEvent.java" />
-        <option value="$PROJECT_DIR$/Repository/Archive.java" />
-        <option value="$PROJECT_DIR$/lib/Persistence/Persistence.java" />
-        <option value="$PROJECT_DIR$/lib/Search/Search.java" />
-        <option value="$PROJECT_DIR$/lib/Transaction/Transaction.java" />
-        <option value="$PROJECT_DIR$/lib/Persistence/src/Book.java" />
-        <option value="$PROJECT_DIR$/lib/Search/src/Component.java" />
-        <option value="$PROJECT_DIR$/lib/Search/src/IComponent.java" />
-        <option value="$PROJECT_DIR$/lib/Transaction/src/Component.java" />
-        <option value="$PROJECT_DIR$/lib/Transaction/src/IComponent.java" />
-        <option value="$PROJECT_DIR$/Repository/MethodenRepository.java" />
-        <option value="$PROJECT_DIR$/src/AdvancedEncryptionStandard.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/HSQLDBManager.java" />
-        <option value="$PROJECT_DIR$/Mediator/Mediator.java" />
-        <option value="$PROJECT_DIR$/lib/Persistence/src/Component.java" />
-        <option value="$PROJECT_DIR$/lib/Persistence/src/IComponent.java" />
-        <option value="$PROJECT_DIR$/Persistance/src/Book.java" />
-        <option value="$PROJECT_DIR$/Persistance/src/Component.java" />
-        <option value="$PROJECT_DIR$/Persistance/src/IComponent.java" />
-        <option value="$PROJECT_DIR$/Persistance/src/Configuration.java" />
-        <option value="$PROJECT_DIR$/Persistance/src/AdvancedEncryptionStandard.java" />
-        <option value="$PROJECT_DIR$/Persistance/src/HSQLDBManager.java" />
-        <option value="$PROJECT_DIR$/HSQLDBManager.java" />
-        <option value="$PROJECT_DIR$/Repository/Configuration.java" />
-        <option value="$PROJECT_DIR$/src/Configuration.java" />
-        <option value="$PROJECT_DIR$/ModelNew/src/Book.java" />
-        <option value="$PROJECT_DIR$/ModelNew/src/com/book/Book.java" />
-        <option value="$PROJECT_DIR$/Parser/Parser.java" />
-        <option value="$PROJECT_DIR$/Repository/SoftwareRepository.java" />
-        <option value="$PROJECT_DIR$/Repository/HSQLDBManager.java" />
-        <option value="$PROJECT_DIR$/Memento/DatabaseMemento.java" />
-        <option value="$PROJECT_DIR$/Memento/Memento.java" />
-        <option value="$PROJECT_DIR$/Persistence/src/IComponent.java" />
-        <option value="$PROJECT_DIR$/ViewModel/ViewModel.java" />
-        <option value="$PROJECT_DIR$/ViewModel/Events/NewBookEvent.java" />
-        <option value="$PROJECT_DIR$/ViewModel/Events/SearchEvent.java" />
-        <option value="$PROJECT_DIR$/ViewModel/Events/SellEvent.java" />
-        <option value="$PROJECT_DIR$/ViewModel/Events/UpdateEvent.java" />
-        <option value="$PROJECT_DIR$/ViewModel/Events/BuyEvent.java" />
-        <option value="$PROJECT_DIR$/Repository/MethodRepository.java" />
-        <option value="$PROJECT_DIR$/Persistence/src/Component.java" />
-        <option value="$PROJECT_DIR$/Persistence/src/BookP.java" />
-        <option value="$PROJECT_DIR$/Persistence/src/HSQLDBManager.java" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
       </list>
     </option>
   </component>
@@ -364,17 +89,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-<<<<<<< HEAD
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
-=======
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
-  </component>
-  <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -391,109 +108,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-<<<<<<< HEAD
-=======
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="BuchhandlungII" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="BuchhandlungII" />
-=======
-              <option name="myItemId" value="Buchhandlung 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Buchhandlung 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Buchhandlung 2" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="BuchhandlungII" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="BuchhandlungII" />
-=======
-              <option name="myItemId" value="Buchhandlung 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Buchhandlung 2" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ViewModel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-<<<<<<< HEAD
-              <option name="myItemId" value="BuchhandlungII" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BuchhandlungII" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-=======
-              <option name="myItemId" value="Buchhandlung 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Buchhandlung 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ViewModel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Events" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-<<<<<<< HEAD
-              <option name="myItemId" value="BuchhandlungII" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BuchhandlungII" />
-=======
-              <option name="myItemId" value="Buchhandlung 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Buchhandlung 2" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -503,41 +136,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="BuchhandlungII" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="BuchhandlungII" />
-=======
-              <option name="myItemId" value="Buchhandlung 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Buchhandlung 2" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-<<<<<<< HEAD
-              <option name="myItemId" value="BuchhandlungII" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BuchhandlungII" />
-=======
-              <option name="myItemId" value="Buchhandlung 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Buchhandlung 2" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -547,19 +150,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="BuchhandlungII" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="BuchhandlungII" />
-=======
-              <option name="myItemId" value="Buchhandlung 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Buchhandlung 2" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -568,168 +163,26 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-<<<<<<< HEAD
-              <option name="myItemId" value="BuchhandlungII" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BuchhandlungII" />
-=======
-              <option name="myItemId" value="Buchhandlung 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Buchhandlung 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Parser" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Buchhandlung 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Buchhandlung 2" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ModelNew" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-<<<<<<< HEAD
-              <option name="myItemId" value="BuchhandlungII" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BuchhandlungII" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-=======
-              <option name="myItemId" value="Buchhandlung 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Buchhandlung 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ModelNew" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="book" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Buchhandlung 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Buchhandlung 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Memento" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Buchhandlung 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Buchhandlung 2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Mediator" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-<<<<<<< HEAD
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Persistence" />
-=======
-    </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Buchhandlung" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path" value="D:/Programme/Node/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="D:\Programme\Node\node.exe" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-  </component>
-  <component name="RecentsManager">
-<<<<<<< HEAD
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\DHBW Skripte\4. Semester\Software Engineering II\Buchhandlung\BuchhandlungII\Persistence\src" />
-=======
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="ViewModel.Events" />
-      <recent name="ViewModel" />
-      <recent name="EventBus" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\hro\Desktop\Buchhandlung 2\lib" />
-      <recent name="C:\Users\hro\Desktop\Buchhandlung 2\Persistence\src" />
-      <recent name="C:\Users\hro\Desktop\Buchhandlung 2\Persistance" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
-      <recent name="lib.Persistence.src" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\hro\Desktop\Buchhandlung 2\Persistence\src" />
-      <recent name="C:\Users\hro\Desktop\Buchhandlung 2\Repository" />
-      <recent name="C:\Users\hro\Desktop\Buchhandlung 2" />
-      <recent name="C:\Users\wn00084650\Desktop\Buchhandlung\BuchhandlungII\lib" />
-      <recent name="C:\Users\wn00084650\Desktop\Buchhandlung\BuchhandlungII" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-<<<<<<< HEAD
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="src.*" />
@@ -737,36 +190,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="src.Main" />
-=======
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="src.Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="BuchhandlungII" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="guava.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="JAR_PATH" value="$PROJECT_DIR$/lib/guava.jar" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="SoftwareRepository" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="Repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="Repository.SoftwareRepository" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1016,10 +439,6 @@
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
       <setting name="launchBrowserUrl" value="" />
-<<<<<<< HEAD
-=======
-      <setting name="depsClasspath" value="false" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -1141,15 +560,6 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-<<<<<<< HEAD
-=======
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -1165,25 +575,12 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-<<<<<<< HEAD
     <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list size="1">
         <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-=======
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="JAR Application.guava.jar" />
-      <item index="2" class="java.lang.String" itemvalue="Application.SoftwareRepository" />
-    </list>
-    <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SoftwareRepository" />
-        <item index="2" class="java.lang.String" itemvalue="JAR Application.guava.jar" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
       </list>
     </recent_temporary>
   </component>
@@ -1192,45 +589,44 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-<<<<<<< HEAD
-      <changelist id="db0acefa-8c37-4767-a3eb-efc4f2e69da7" name="Default" comment="" />
-      <created>1492192009939</created>
+      <changelist id="647915d2-1dd7-495f-b3cf-331ba01be24f" name="Default" comment="" />
+      <created>1492201249332</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1492192009939</updated>
-      <workItem from="1492192011554" duration="4600000" />
+      <updated>1492201249332</updated>
+      <workItem from="1492201250885" duration="138000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4600000" />
+    <option name="totallyTimeSpent" value="138000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1386" height="788" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842416" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3078056" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489051" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39911634" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1238,198 +634,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-=======
-      <changelist id="95d41c20-8335-4d68-a271-91ea61ff79b5" name="Default" comment="" />
-      <created>1491657420362</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1491657420362</updated>
-      <workItem from="1491657421730" duration="3436000" />
-      <workItem from="1491661049443" duration="2955000" />
-      <workItem from="1491664080346" duration="6483000" />
-      <workItem from="1491762604039" duration="7123000" />
-      <workItem from="1491770003142" duration="642000" />
-      <workItem from="1491800926644" duration="5325000" />
-      <workItem from="1491807713394" duration="14678000" />
-      <workItem from="1491834958991" duration="1567000" />
-      <workItem from="1491886975025" duration="36677000" />
-      <workItem from="1492165843787" duration="7093000" />
-      <workItem from="1492173088926" duration="18318000" />
-    </task>
-    <task id="LOCAL-00001" summary="GUI wird angezeigt">
-      <created>1491658683314</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1491658683314</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Event Bus eingebaut &#10;">
-      <created>1491664376783</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1491664376783</updated>
-    </task>
-    <task id="LOCAL-00003" summary="GUI erweitert&#10;">
-      <created>1491738194214</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1491738194214</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Events erweitert">
-      <created>1491739862815</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1491739862815</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Events in Package">
-      <created>1491740088425</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1491740088425</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Update, Delete, Insert - getBookFromDB suche nach Buch mit Titel - allBookFromDB gibt alle bücher aus der Datenbank als Liste">
-      <created>1491768894447</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1491768894447</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Fertigen AES code gefunden und eingefügt, muss ihn noch auf die DB anpassen- lass dich nicht durch die Kommentare verwirren in der Main :P">
-      <created>1491769708559</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1491769708559</updated>
-    </task>
-    <task id="LOCAL-00008" summary="hab gerade nachgelesen, ist ECB verschlüsselt, also der dicke bullshit! ich schaus mir morgen nochmal an :p">
-      <created>1491770626976</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1491770626976</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Datenbankpasswort AES CBC verschlüsselt, Memento implementiert, Komponent Klassen angelegt - bin mir noch nicht sicher wie ich das machen soll">
-      <created>1491835098578</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1491835098578</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Komponenten eingefügt, Liste von Funktionen und ausführen implementiert (Beim ausfphren übergebe ich noch keine Parameter, muss man noch irgendwie lösen :P)&#10;">
-      <created>1491927028443</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1491927028443</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Komponenten Angepasst">
-      <created>1492009835193</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1492009835193</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Ohne externe Lib Aes">
-      <created>1492087450506</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1492087450506</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Ohne externe Lib Aes">
-      <created>1492166085835</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1492166085835</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Update">
-      <created>1492166709502</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1492166709502</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Data base Sell und Buy eingefügt">
-      <created>1492172281202</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1492172281202</updated>
-    </task>
-    <task id="LOCAL-00016" summary="getClass">
-      <created>1492174023884</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1492174023884</updated>
-    </task>
-    <task id="LOCAL-00017" summary="getClass">
-      <created>1492174429289</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1492174429289</updated>
-    </task>
-    <task id="LOCAL-00018" summary="du weißt">
-      <created>1492175195314</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1492175195314</updated>
-    </task>
-    <task id="LOCAL-00019" summary="pfusch">
-      <created>1492191264901</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1492191264901</updated>
-    </task>
-    <option name="localTasksCounter" value="20" />
-    <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104297000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31606767" sideWeight="0.46666667" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28541225" sideWeight="0.5229167" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28541225" sideWeight="0.47708333" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.49583334" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16354166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.49375" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3319239" sideWeight="0.48125" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23928571" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1438,67 +642,8 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-<<<<<<< HEAD
-=======
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="GUI wird angezeigt" />
-    <MESSAGE value="Event Bus eingebaut &#10;" />
-    <MESSAGE value="GUI erweitert&#10;" />
-    <MESSAGE value="Events erweitert" />
-    <MESSAGE value="Events in Package" />
-    <MESSAGE value="Update, Delete, Insert - getBookFromDB suche nach Buch mit Titel - allBookFromDB gibt alle bücher aus der Datenbank als Liste" />
-    <MESSAGE value="Fertigen AES code gefunden und eingefügt, muss ihn noch auf die DB anpassen- lass dich nicht durch die Kommentare verwirren in der Main :P" />
-    <MESSAGE value="hab gerade nachgelesen, ist ECB verschlüsselt, also der dicke bullshit! ich schaus mir morgen nochmal an :p" />
-    <MESSAGE value="Datenbankpasswort AES CBC verschlüsselt, Memento implementiert, Komponent Klassen angelegt - bin mir noch nicht sicher wie ich das machen soll" />
-    <MESSAGE value="Komponenten eingefügt, Liste von Funktionen und ausführen implementiert (Beim ausfphren übergebe ich noch keine Parameter, muss man noch irgendwie lösen :P)&#10;" />
-    <MESSAGE value="Komponenten Angepasst" />
-    <MESSAGE value="Ohne externe Lib Aes" />
-    <MESSAGE value="Update" />
-    <MESSAGE value="Data base Sell und Buy eingefügt" />
-    <MESSAGE value="getClass" />
-    <MESSAGE value="du weißt" />
-    <MESSAGE value="pfusch" />
-    <option name="LAST_COMMIT_MESSAGE" value="pfusch" />
-  </component>
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Repository/MethodRepository.java</url>
-<<<<<<< HEAD
-          <line>37</line>
-          <properties />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Repository/MethodRepository.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ViewModel/ViewModel.java</url>
-          <line>26</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="4" />
-=======
-          <line>28</line>
-          <properties />
-          <option name="timeStamp" value="71" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Repository/MethodRepository.java</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="74" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1506,759 +651,26 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/Persistence/src/AdvancedEncryptionStandard.java">
-=======
-    <entry file="file://$PROJECT_DIR$/Persistence/src/Book.java">
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/Repository/SoftwareRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="130" column="93" lean-forward="false" selection-start-line="130" selection-start-column="93" selection-end-line="130" selection-end-column="93" />
-=======
-    <entry file="file://$PROJECT_DIR$/Persistence/src/AdvancedEncryptionStandard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="20" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/Persistence/src/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="jar://$PROJECT_DIR$/lib/gson-2.2.1.jar!/com/google/gson/internal/ConstructorConstructor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-=======
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="356" column="0" lean-forward="false" selection-start-line="356" selection-start-column="0" selection-end-line="356" selection-end-column="0" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_91/jre/lib/rt.jar!/java/util/ArrayList.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="50" column="11" lean-forward="false" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
-          <folding>
-            <element signature="e#1606#1607#0" expanded="true" />
-            <element signature="e#1674#1675#0" expanded="true" />
-=======
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/jre/lib/rt.jar!/sun/misc/Launcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Enum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-          <folding>
-            <element signature="e#4032#4033#0" expanded="false" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="jar://$PROJECT_DIR$/lib/gson-2.2.1.jar!/com/google/gson/Gson.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding>
-            <element signature="e#3467#3632#0" expanded="true" />
-            <element signature="e#3631#3632#0" expanded="true" />
-            <element signature="e#3746#3959#0" expanded="true" />
-            <element signature="e#3958#3959#0" expanded="true" />
-=======
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="1502" column="0" lean-forward="false" selection-start-line="1502" selection-start-column="0" selection-end-line="1502" selection-end-column="0" />
-          <folding>
-            <element signature="e#58518#58519#0" expanded="false" />
-            <element signature="e#62860#62861#0" expanded="false" />
-            <element signature="e#62916#62917#0" expanded="false" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/View/Buchhandlung.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ViewModel/Events/NewBookEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-=======
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/io/PrintStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="806" column="0" lean-forward="false" selection-start-line="806" selection-start-column="0" selection-end-line="806" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Repository/Archive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="e#508#509#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parser/PersistenceParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Persistence/src/HSQLDBManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="49" column="43" lean-forward="false" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+        <state relative-caret-position="141">
+          <caret line="53" column="29" lean-forward="false" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1492192815979" expanded="true" signature="2792:2861" ph="SELECT title... book" />
-            <marker date="1492192815979" expanded="true" signature="3640:3678" ph="SELECT title... book" />
-            <marker date="1492192815979" expanded="true" signature="4645:4724" ph="SELECT title... book" />
-            <marker date="1492192815979" expanded="true" signature="5467:5546" ph="SELECT title... book" />
-=======
-    <entry file="file://$PROJECT_DIR$/Parser/TransactionParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parser/SearchParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="1785" column="0" lean-forward="false" selection-start-line="1785" selection-start-column="0" selection-end-line="1785" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Mediator/Mediator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
+            <marker date="1492201358006" expanded="true" signature="2766:2835" ph="SELECT title... book" />
+            <marker date="1492201358006" expanded="true" signature="3614:3652" ph="SELECT title... book" />
+            <marker date="1492201358006" expanded="true" signature="4619:4698" ph="SELECT title... book" />
+            <marker date="1492201358006" expanded="true" signature="5441:5520" ph="SELECT title... book" />
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/Persistence/src/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-=======
-    <entry file="file://$PROJECT_DIR$/src/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/Mediator/Mediator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-=======
-    <entry file="jar://$PROJECT_DIR$/lib/guava.jar!/com/google/common/base/Preconditions.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="321" column="0" lean-forward="false" selection-start-line="321" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="jar://$PROJECT_DIR$/out/production/BuchhandlungII/lib/guava.jar!/com/google/common/util/concurrent/MoreExecutors.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-=======
-    <entry file="jar://$PROJECT_DIR$/lib/guava.jar!/com/google/common/eventbus/SubscriberExceptionContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#925#926#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/guava.jar!/com/google/common/util/concurrent/MoreExecutors.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-          <caret line="479" column="0" lean-forward="false" selection-start-line="479" selection-start-column="0" selection-end-line="479" selection-end-column="0" />
-          <folding>
-            <element signature="e#19639#19640#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="jar://$PROJECT_DIR$/out/production/BuchhandlungII/lib/guava.jar!/com/google/common/eventbus/Subscriber.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-=======
-    <entry file="jar://$PROJECT_DIR$/lib/guava.jar!/com/google/common/eventbus/Dispatcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="jar://$PROJECT_DIR$/out/production/BuchhandlungII/lib/guava.jar!/com/google/common/eventbus/Dispatcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="109" column="0" lean-forward="false" selection-start-line="109" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
-=======
-    <entry file="jar://$PROJECT_DIR$/lib/guava.jar!/com/google/common/eventbus/EventBus.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="jar://$PROJECT_DIR$/out/production/BuchhandlungII/lib/guava.jar!/com/google/common/eventbus/EventBus.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-=======
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/reflect/Modifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding>
-            <element signature="e#1674#1675#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/jre/lib/rt.jar!/sun/reflect/Reflection.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/ViewModel/ViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-=======
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/reflect/Method.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="563" column="0" lean-forward="false" selection-start-line="563" selection-start-column="0" selection-end-line="563" selection-end-column="0" />
-          <folding>
-            <element signature="e#20678#20679#0" expanded="false" />
-            <element signature="e#20715#20716#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#25830#0" expanded="false" />
-            <element signature="e#5748#5749#0" expanded="false" />
-            <element signature="e#5784#5785#0" expanded="false" />
-            <element signature="e#10065#10066#0" expanded="false" />
-            <element signature="e#10148#10149#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/jre/lib/rt.jar!/sun/reflect/MagicAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="jar://$PROJECT_DIR$/Persistence/src/gson-2.2.1.jar!/com/google/gson/Gson.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3467#3632#0" expanded="true" />
-            <element signature="e#3631#3632#0" expanded="true" />
-=======
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/jre/lib/rt.jar!/sun/reflect/MethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="e#638#639#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/jre/lib/rt.jar!/sun/reflect/ReflectionFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding>
-            <element signature="e#13030#13031#0" expanded="true" />
-            <element signature="e#13071#13072#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/Book.jar!/Book.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/Book.jar!/Book.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ModelNew/src/com/book/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Parser/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Memento/DatabaseMemento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Memento/Memento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="74" lean-forward="false" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/View/Buchhandlung.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-=======
-    <entry file="file://$PROJECT_DIR$/Persistence/src/IComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ViewModel/ViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ViewModel/Events/NewBookEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-          <folding>
-            <element signature="e#166#167#0" expanded="true" />
-            <element signature="e#193#194#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ViewModel/Events/SearchEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ViewModel/Events/SellEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ViewModel/Events/UpdateEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View/Buchhandlung.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="53" column="71" lean-forward="true" selection-start-line="53" selection-start-column="71" selection-end-line="53" selection-end-column="71" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/src/FormatParser.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#638#644#0" expanded="true" />
-=======
-    <entry file="file://$PROJECT_DIR$/Repository/SoftwareRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#executeMethods#0;class#SoftwareRepository#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Persistence/src/BookP.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding>
-            <element signature="e#151#152#0" expanded="true" />
-            <element signature="e#186#187#0" expanded="true" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/Repository/MethodRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="37" column="42" lean-forward="false" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#604#610#0" expanded="true" />
-=======
-    <entry file="jar://$PROJECT_DIR$/Persistence/Book.jar!/com/book/Book.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Persistence/src/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Repository/MethodRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#989#995#0" expanded="true" />
-            <element signature="e#1066#1081#0" expanded="true" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/Persistence/src/FormatParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-=======
-    <entry file="file://$PROJECT_DIR$/ViewModel/Events/BuyEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/Persistence/src/IComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding />
-=======
-    <entry file="file://$PROJECT_DIR$/Repository/HSQLDBManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getBookFromDB#0;class#HSQLDBManager#0" expanded="false" />
-            <element signature="method#allBookFromDB#0;class#HSQLDBManager#0" expanded="false" />
-            <element signature="method#shutdown#0;class#HSQLDBManager#0" expanded="false" />
-            <element signature="method#init#0;class#HSQLDBManager#0" expanded="false" />
-            <marker date="1492188507860" expanded="true" signature="2698:2767" ph="SELECT title... book" />
-            <marker date="1492188507860" expanded="true" signature="3546:3584" ph="SELECT title... book" />
-            <marker date="1492188507860" expanded="true" signature="4551:4630" ph="SELECT title... book" />
-            <marker date="1492188507860" expanded="true" signature="5373:5452" ph="SELECT title... book" />
-          </folding>
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Persistence/src/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="184">
-          <caret line="60" column="36" lean-forward="false" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-=======
-        <state relative-caret-position="255">
-          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/guava.jar!/com/google/common/eventbus/Subscriber.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="e#1375#1730#0" expanded="true" />
-            <element signature="e#1729#1730#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Persistence/src/HSQLDBManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="51" column="50" lean-forward="false" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1492190876946" expanded="true" signature="2740:2809" ph="SELECT title... book" />
-            <marker date="1492190876946" expanded="true" signature="3588:3626" ph="SELECT title... book" />
-            <marker date="1492190876946" expanded="true" signature="4593:4672" ph="SELECT title... book" />
-            <marker date="1492190876946" expanded="true" signature="5415:5494" ph="SELECT title... book" />
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>Persistence</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>BuchhandlungII</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.19703704" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-<<<<<<< HEAD
-          <last-edited>Book</last-edited>
-=======
-          <last-edited>commons-codec-1.10</last-edited>
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

@@ -50,15 +50,11 @@ public enum HSQLDBManager {
     public void insert(ArrayList<Book> books)
     {
         System.out.println("fff");
-<<<<<<< HEAD
+
         System.out.println();
-        Book book = new Book("sss","ghhj","hhhjjl.");
-        System.out.println(book.getTitel());
-         book = books.get(0);
-=======
+
         System.out.println(books.get(0).getTitel());
         Book book = books.get(0);
->>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
         System.out.println("Hier");
         update("INSERT INTO book (title,quantity,uuid) " +
                 "VALUES (\'" + book.getTitel() + "\',\'" + book.getQuantity() + "\',\'" + book.getUuid() + "\');");
