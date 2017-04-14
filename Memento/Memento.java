@@ -1,11 +1,11 @@
 package Memento;
 
-import Model.Book;
+import com.book.Book;
 import ViewModel.Events.SaveEvent;
 import ViewModel.Events.UndoEvent;
 import ViewModel.Subscriber;
 import com.google.common.eventbus.Subscribe;
-import src.HSQLDBManager;
+import Repository.HSQLDBManager;
 
 import java.util.ArrayList;
 

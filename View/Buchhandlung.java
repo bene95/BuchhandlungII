@@ -1,12 +1,11 @@
 package View;
 
+import src.Configuration;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-import Model.Book;
-import src.*;
 
 
 public class Buchhandlung extends JFrame {

@@ -1,8 +1,9 @@
 package ViewModel;
 
-import Model.Book;
+import com.book.Book;
 import ViewModel.Events.*;
 import com.google.common.eventbus.EventBus;
+
 
 public class ViewModel {
     private int eventCounter = 0;
@@ -19,7 +20,8 @@ public class ViewModel {
 
 
     public void createNewBook(String title){
-        saveState();
+
+
         Book book = new Book();
         book.setTitel(title);
         eventBus.post(new NewBookEvent(eventCounter++,book));

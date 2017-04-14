@@ -14,5 +14,9 @@
     <orderEntry type="library" exported="" name="hsqldb" level="project" />
     <orderEntry type="library" name="guava" level="project" />
     <orderEntry type="library" name="commons-codec-1.10" level="project" />
+    <orderEntry type="library" name="Book" level="project" />
+    <orderEntry type="library" name="Book (3)" level="project" />
+    <orderEntry type="library" name="Book (4)" level="project" />
+    <orderEntry type="library" name="Book (2)" level="project" />
   </component>
 </module>

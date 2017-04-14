@@ -1,4 +1,5 @@
-package Model;
+package com.book;
+
 public class Book {
     private String titel;
 

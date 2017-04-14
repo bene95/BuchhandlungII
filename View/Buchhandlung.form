@@ -21,7 +21,7 @@
           <grid id="b5ce7" binding="tabNewBook" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <tabbedpane title="New Book"/>
+              <tabbedpane title="New com.book.Book"/>
             </constraints>
             <properties/>
             <border type="none"/>
@@ -97,7 +97,7 @@
           <grid id="ad511" binding="tabUpdateBook" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <tabbedpane title="Update Book"/>
+              <tabbedpane title="Update com.book.Book"/>
             </constraints>
             <properties/>
             <border type="none"/>
@@ -181,7 +181,7 @@
           <grid id="7ef77" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <tabbedpane title="Sell Book"/>
+              <tabbedpane title="Sell com.book.Book"/>
             </constraints>
             <properties/>
             <border type="none"/>
@@ -231,7 +231,7 @@
           <grid id="5c40c" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <tabbedpane title="Buy Book"/>
+              <tabbedpane title="Buy com.book.Book"/>
             </constraints>
             <properties/>
             <border type="none"/>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Persistence">
+    <output-path>$PROJECT_DIR$/Persistence</output-path>
+    <root id="archive" name="Persistence.jar">
+      <element id="module-output" name="Persistence" />
+    </root>
+  </artifact>
+</component>

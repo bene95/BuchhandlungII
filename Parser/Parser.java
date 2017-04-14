@@ -1,8 +1,9 @@
 package Parser;
 
-import Model.Book;
+
 import Repository.MethodRepository;
 import Repository.SoftwareRepository;
+import com.book.Book;
 
 
 public class Parser {

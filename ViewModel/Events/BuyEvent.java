@@ -1,12 +1,9 @@
 package ViewModel.Events;
 
-import Model.Book;
-
-
 public class BuyEvent extends Event {
-    private Book book;
+    private com.book.Book book;
 
-    public BuyEvent(int id, Book book) {
+    public BuyEvent(int id, com.book.Book book) {
         super(id);
         this.book = book;
     }

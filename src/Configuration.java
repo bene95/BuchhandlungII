@@ -11,6 +11,7 @@ public enum Configuration {
     public EventBus eventBus = new EventBus("ECB-"+1);
 
     public ViewModel viewModel = new ViewModel(1,eventBus);
+    public String fileSeparator = System.getProperty("file.separator");
 
 
     //public MethodRepository methodRepository = new MethodRepository();

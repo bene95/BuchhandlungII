@@ -1,6 +1,9 @@
-package src;
+package Repository;
 
-import Model.Book;
+
+import com.book.Book;
+import src.AdvancedEncryptionStandard;
+import src.Configuration;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -27,7 +30,7 @@ public enum HSQLDBManager {
         try {
             Class.forName("org.hsqldb.jdbcDriver");
             String databaseURL = driverName + userDir + "\\database\\database";
-            connection = DriverManager.getConnection(databaseURL,username,AdvancedEncryptionStandard.decrypt(key, initVector,
+            connection = DriverManager.getConnection(databaseURL,username, AdvancedEncryptionStandard.decrypt(key, initVector,
                     password));
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -36,27 +39,27 @@ public enum HSQLDBManager {
     //Executes Statement
     public synchronized void update(String sqlStatement) {
         try {
-            src.HSQLDBManager.instance.startup();
+            HSQLDBManager.instance.startup();
             Statement statement = connection.createStatement();
             int result = statement.executeUpdate(sqlStatement);
             if (result == -1)
                 System.out.println("error executing " + sqlStatement);
             statement.close();
-            src.HSQLDBManager.instance.shutdown();
+            HSQLDBManager.instance.shutdown();
         } catch (SQLException sqle) {
             System.out.println(sqle.getMessage());
         }
     }
 
-    public void insert(Model.Book book) {
-
+    public void insert(com.book.Book book) {
+        System.out.println("Dort");
         update("INSERT INTO book (title,quantity,uuid) " +
                 "VALUES (\'" + book.getTitel() + "\',\'" + book.getQuantity() + "\',\'" + book.getUuid() + "\');");
 
     }
 
 
-    public void delete(Model.Book book) {
+    public void delete(Book book) {
         update("DELETE FROM book WHERE uuid = \'" + book.getUuid() +"\';");
     }
 
@@ -64,7 +67,7 @@ public enum HSQLDBManager {
         update("DELETE FROM book WHERE uuid = \'" + uuid +"\';");
     }
 
-    public void update(Model.Book book)
+    public void update(Book book)
     {
        update("UPDATE book SET title = \'" + book.getTitel() + "\' , quantity = \'" + book.getQuantity() + "\' , uuid = \'" + book.getUuid() +"\' WHERE title = \'" + book.getTitel() + "\';" );
     }
@@ -72,11 +75,11 @@ public enum HSQLDBManager {
     // One Book With Title
     public Book getBookFromDB(String title) {
         try {
-            src.HSQLDBManager.instance.startup();
+            HSQLDBManager.instance.startup();
             stmt = connection.createStatement();
             String getBook = "SELECT title, quantity, uuid FROM book WHERE title = \'" + title +"\';";
             result = stmt.executeQuery(getBook);
-            src.HSQLDBManager.instance.shutdown();
+            HSQLDBManager.instance.shutdown();
             // The result "pointer" always stays behind the result, have to increment once!!
             result.next();
             Book b1 = new Book(result.getString("title"), result.getString("quantity"), result.getString("uuid"));
@@ -92,11 +95,11 @@ public enum HSQLDBManager {
     public ArrayList<Book> allBookFromDB() {
         ArrayList<Book> allB = new ArrayList<>();
         try {
-            src.HSQLDBManager.instance.startup();
+            HSQLDBManager.instance.startup();
             stmt = connection.createStatement();
             String getBook = "SELECT title, quantity, uuid FROM book;";
             result = stmt.executeQuery(getBook);
-            src.HSQLDBManager.instance.shutdown();
+            HSQLDBManager.instance.shutdown();
             // The result "pointer" always stays behind the result, have to increment once!!
             while(result.next()) {
                 Book book = new Book(result.getString(1), result.getString(2), result.getString(3));
@@ -123,11 +126,11 @@ public enum HSQLDBManager {
 
     public void buy(Book book){
         try {
-            src.HSQLDBManager.instance.startup();
+            HSQLDBManager.instance.startup();
             stmt = connection.createStatement();
             String getBook = "SELECT title, quantity, uuid FROM book WHERE title = \'" + book.getTitel() +"\';";
             result = stmt.executeQuery(getBook);
-            src.HSQLDBManager.instance.shutdown();
+            HSQLDBManager.instance.shutdown();
             result.next();
             String quantity =  result.getString("quantity");
             int quant = Integer.parseInt(quantity);
@@ -146,11 +149,11 @@ public enum HSQLDBManager {
 
     public void sell(Book book){
         try {
-            src.HSQLDBManager.instance.startup();
+            HSQLDBManager.instance.startup();
             stmt = connection.createStatement();
             String getBook = "SELECT title, quantity, uuid FROM book WHERE title = \'" + book.getTitel() +"\';";
             result = stmt.executeQuery(getBook);
-            src.HSQLDBManager.instance.shutdown();
+            HSQLDBManager.instance.shutdown();
             result.next();
             String quantity =  result.getString("quantity");
             int quant = Integer.parseInt(quantity);

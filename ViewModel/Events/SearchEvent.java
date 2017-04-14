@@ -1,6 +1,5 @@
 package ViewModel.Events;
-
-import Model.Book;
+import com.book.Book;
 
 /**
  * Created by wn00084650 on 08.04.2017.

@@ -7,7 +7,7 @@ import Repository.MethodRepository;
 import ViewModel.Events.*;
 import ViewModel.Subscriber;
 import com.google.common.eventbus.Subscribe;
-import src.HSQLDBManager;
+import Repository.HSQLDBManager;
 
 
 public class Mediator extends Subscriber {

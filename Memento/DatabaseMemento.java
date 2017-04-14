@@ -1,6 +1,6 @@
 package Memento;
 
-import Model.Book;
+import com.book.Book;
 
 import java.util.ArrayList;
 

@@ -1,9 +1,7 @@
 package ViewModel.Events;
-
-import Model.Book;
-
+import com.book.Book;
 /**
- * Created by wn00084650 on 08.04.2017.
+ * Crated by wn00084650 on 08.04.2017.
  */
 public class UpdateEvent extends Event {
    private Book oldTitle,newTitle;
