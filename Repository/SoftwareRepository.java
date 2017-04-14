@@ -103,5 +103,12 @@ public class SoftwareRepository {
 
         }
 
+    public boolean getMethod(String methodeName, String className) {
+            return true;
     }
+
+    public Class getClass(String persistence) {
+        return null;
+    }
+}
 

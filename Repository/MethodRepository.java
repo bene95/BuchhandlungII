@@ -1,6 +1,8 @@
 package Repository;
 
 
+import Model.Book;
+
 public class MethodRepository {
     private Class cl;
     private String methodName;
@@ -8,5 +10,8 @@ public class MethodRepository {
     public MethodRepository(Class cl, String methodName){
         this.cl = cl;
         this.methodName = methodName;
+    }
+
+    public void execute(Book book) {
     }
 }

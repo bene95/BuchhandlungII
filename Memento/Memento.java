@@ -14,7 +14,7 @@ public class Memento extends Subscriber {
     HSQLDBManager hsqldbManager;
     private DatabaseCareTaker databaseCareTaker = new DatabaseCareTaker();
     
-    public Memento(int id,ArrayList<Book> dataBase) {
+    public Memento(int id) {
         super(id);
         this.dataBase = dataBase;
         databaseCareTaker.setDatabaseMemento(new DatabaseMemento(this.dataBase));

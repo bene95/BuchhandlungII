@@ -1,13 +1,23 @@
 package src;
 
+import Mediator.Mediator;
+import Memento.Memento;
 import Model.Book;
 import Repository.SoftwareRepository;
+import View.Buchhandlung;
 
 import java.util.ArrayList;
 
 public class Main {
 
     public static void main(String[] args) {
+        Buchhandlung buchhandlung = new Buchhandlung();
+        Mediator mediator = new Mediator(1, Configuration.instance.eventBus);
+        Memento memento = new Memento(2);
+        Configuration.instance.viewModel.addSubscriber(mediator);
+        Configuration.instance.viewModel.addSubscriber(memento);
+    }
+}
 	// write your code here
         /*
         HSQLDBManager.instance.init();
@@ -44,17 +54,17 @@ public class Main {
 
            */
 
-        ArrayList<String> s1 = new ArrayList<>();
+        /*ArrayList<String> s1 = new ArrayList<>();
         Book book4 = new Book("DasFlaechenland","5","3");
         SoftwareRepository r1 = new SoftwareRepository(book4);
         r1.getMethod("ola");
         s1 = r1.getMethodList();
         System.out.println(s1.get(0));
 
-        System.out.println(Configuration.instance.userDirectory);
+        System.out.println(Configuration.instance.userDirectory);*/
 
 
 
 
-    }
-}
+
+
