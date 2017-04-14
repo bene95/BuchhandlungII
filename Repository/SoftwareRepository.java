@@ -25,6 +25,8 @@ public class SoftwareRepository {
 
         public void getMethod(String methodName){
             int counter = 0;
+
+            /*
             Archive archive = (Archive) Archive.intValue(counter);
             String name = "lib."+ archive +".src." + "Component";
             try {
@@ -36,7 +38,8 @@ public class SoftwareRepository {
             } catch (ClassNotFoundException e) {
                 System.out.println("Class not found.");
             }
-            /*while(null != Archive.intValue(counter))
+            */
+            while(null != Archive.intValue(counter))
             {
                 Archive archive = (Archive) Archive.intValue(counter);
                 String name = "lib."+ archive +".src." + "Component";
@@ -49,7 +52,7 @@ public class SoftwareRepository {
                     System.out.println("Class not found.");
                 }
                 counter ++;
-            }*/
+            }
         }
 
         // Prints all Methods

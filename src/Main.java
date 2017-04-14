@@ -1,5 +1,10 @@
 package src;
 
+import Model.Book;
+import Repository.SoftwareRepository;
+
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -10,7 +15,7 @@ public class Main {
         Book book = new Book("Metro2033","2","1");
         Book book2 = new Book("Harry","3","2");
         Book book3 = new Book("Dune","5","3");
-        Book book4 = new Book("DasFlaechenland","5","3");
+
 
 
         src.HSQLDBManager.instance.insert(book);
@@ -37,13 +42,16 @@ public class Main {
         Configuration.instance.viewModel.addSubscriber(memento);
         //Configuration.instance.viewModel.undo();
 
+           */
+
         ArrayList<String> s1 = new ArrayList<>();
+        Book book4 = new Book("DasFlaechenland","5","3");
         SoftwareRepository r1 = new SoftwareRepository(book4);
         r1.getMethod("ola");
         s1 = r1.getMethodList();
         System.out.println(s1.get(0));
 
-        System.out.println(Configuration.instance.userDirectory);*/
+        System.out.println(Configuration.instance.userDirectory);
 
 
 
