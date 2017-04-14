@@ -1,6 +1,5 @@
 package lib.Persistence.src;
 
-
 public class Component implements IComponent {
     public Component(){
 
