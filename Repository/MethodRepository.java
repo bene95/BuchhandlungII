@@ -3,6 +3,8 @@ package Repository;
 
 import com.book.Book;
 
+import src.FormatParser;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -20,19 +22,19 @@ public class MethodRepository {
        Object instance;
        Object port;
         try {
-           getMethod(clazz,"wurst");
+            ArrayList<Book> books = new ArrayList<Book>();
+            books.add(book);
+          String format = FormatParser.toFormat(books);
+
             instance = clazz.getMethod("getInstance",new Class[0]).invoke(null,new Object[0]);
             port = clazz.getDeclaredField("port").get(instance);
             System.out.println("port      : " + port.hashCode());
 
             //System.out.println("version   : " + Configuration.instance.getSortTyp());
-            Method getVersion = port.getClass().getMethod(methodName,ArrayList.class);
-            ArrayList<Book> books = new ArrayList<Book>();
-            ArrayList<HSQLDBManager> hsqldbManagers = new ArrayList<HSQLDBManager>();
-            books.add( book);
-            hsqldbManagers.add(HSQLDBManager.instance);
-            System.out.println(hsqldbManagers.get(0).instance);
-            getVersion.invoke(port, books);
+            Method getVersion = port.getClass().getMethod(methodName,String.class);
+
+
+            getVersion.invoke(port, format);
             /*try {
                 method.invoke(obj, book, hsqldbManager);
             } catch (IllegalAccessException e) {

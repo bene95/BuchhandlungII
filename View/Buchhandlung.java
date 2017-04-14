@@ -51,7 +51,7 @@ public class Buchhandlung extends JFrame {
 
         NewBookSubmit.addActionListener(actionEvent -> {
 
-            Configuration.instance.viewModel.createNewBook(txtNewBookTitle.toString());
+            Configuration.instance.viewModel.createNewBook(txtNewBookTitle.getText());
         });
         btnUpdateBookSubmit.addActionListener(actionEvent -> {
 

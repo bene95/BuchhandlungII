@@ -1,3 +1,5 @@
+
+
 public enum Configuration {
     instance;
 

@@ -1,4 +1,5 @@
-import com.book.Book;
+
+
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -50,9 +51,9 @@ public enum HSQLDBManager {
     {
         System.out.println("fff");
         System.out.println();
-        BookP book = new BookP("Title", "15", "asdf");
+        Book book = new Book("sss","ghhj","hhhjjl.");
         System.out.println(book.getTitel());
-        Book book2 = books.get(0);
+         book = books.get(0);
         System.out.println("Hier");
         update("INSERT INTO book (title,quantity,uuid) " +
                 "VALUES (\'" + book.getTitel() + "\',\'" + book.getQuantity() + "\',\'" + book.getUuid() + "\');");

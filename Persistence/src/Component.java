@@ -1,4 +1,6 @@
-import com.book.Book;
+
+
+
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -11,14 +13,17 @@ public class Component  {
         port = new Port();
     }
     public static Component getInstance() {
-
         return instance;
 
     }
 
-    public void insert(ArrayList<Book >books){
+    public void insert(String format){
         System.out.println("ODERDOCH!!!!");
-      HSQLDBManager.instance.insert(books);
+        ArrayList<Book> books= FormatParser.fromFormat(format);
+        Book book = books.get(0);
+
+        System.out.println(book);
+         HSQLDBManager.instance.insert(books);
     }
 
     public void update() {
@@ -51,9 +56,9 @@ public class Component  {
         }
 
         @Override
-        public void insert(ArrayList<Book >books) {
+        public void insert(String format) {
             System.out.println("bla");
-        Component.this.insert(books);
+        Component.this.insert(format);
         }
 
         @Override
