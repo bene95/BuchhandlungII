@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="db0acefa-8c37-4767-a3eb-efc4f2e69da7" name="Default" comment="" />
+=======
+    <list default="true" id="95d41c20-8335-4d68-a271-91ea61ff79b5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Persistence/src/HSQLDBManager.java" afterPath="$PROJECT_DIR$/Persistence/src/HSQLDBManager.java" />
+    </list>
+>>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -86,6 +93,7 @@
       <file leaf-file-name="Subscriber.class" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/out/production/BuchhandlungII/lib/guava.jar!/com/google/common/eventbus/Subscriber.class">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="82">
               <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding />
@@ -101,6 +109,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#576#582#0" expanded="true" />
+=======
+            <state relative-caret-position="493">
+              <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1492191437664" expanded="true" signature="2740:2809" ph="SELECT title... book" />
+                <marker date="1492191437664" expanded="true" signature="3588:3626" ph="SELECT title... book" />
+                <marker date="1492191437664" expanded="true" signature="4593:4672" ph="SELECT title... book" />
+                <marker date="1492191437664" expanded="true" signature="5415:5494" ph="SELECT title... book" />
+>>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
               </folding>
             </state>
           </provider>
@@ -174,6 +192,11 @@
         <option value="$PROJECT_DIR$/Persistence/src/FormatParser.java" />
         <option value="$PROJECT_DIR$/Repository/MethodRepository.java" />
         <option value="$PROJECT_DIR$/Persistence/src/Component.java" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/Persistence/src/BookP.java" />
+        <option value="$PROJECT_DIR$/Persistence/src/HSQLDBManager.java" />
+>>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
       </list>
     </option>
   </component>
@@ -184,10 +207,20 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
+=======
+    <option name="x" value="132" />
+    <option name="y" value="194" />
+    <option name="width" value="1279" />
+    <option name="height" value="692" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="2" />
+>>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -289,11 +322,19 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
+<<<<<<< HEAD
               <option name="myItemId" value="BuchhandlungII" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="BuchhandlungII" />
+=======
+              <option name="myItemId" value="Buchhandlung 2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Buchhandlung 2" />
+>>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -341,8 +382,17 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+<<<<<<< HEAD
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\DHBW Skripte\4. Semester\Software Engineering II\Buchhandlung\BuchhandlungII\Persistence\src" />
+=======
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hro\Desktop\Buchhandlung 2\Persistence" />
+      <recent name="C:\Users\hro\Desktop\Buchhandlung 2\Persistence\src" />
+      <recent name="C:\Users\hro\Desktop\Buchhandlung 2\Repository" />
+      <recent name="C:\Users\hro\Desktop\Buchhandlung 2" />
+      <recent name="C:\Users\wn00084650\Desktop\Buchhandlung\BuchhandlungII\lib" />
+>>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -757,6 +807,7 @@
       <created>1492192009939</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1492192009939</updated>
       <workItem from="1492192011554" duration="6115000" />
     </task>
@@ -768,9 +819,167 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
+=======
+      <updated>1491657420362</updated>
+      <workItem from="1491657421730" duration="3436000" />
+      <workItem from="1491661049443" duration="2955000" />
+      <workItem from="1491664080346" duration="6483000" />
+      <workItem from="1491762604039" duration="7123000" />
+      <workItem from="1491770003142" duration="642000" />
+      <workItem from="1491800926644" duration="5325000" />
+      <workItem from="1491807713394" duration="14678000" />
+      <workItem from="1491834958991" duration="1567000" />
+      <workItem from="1491886975025" duration="36677000" />
+      <workItem from="1492165843787" duration="7093000" />
+      <workItem from="1492173088926" duration="18562000" />
+    </task>
+    <task id="LOCAL-00001" summary="GUI wird angezeigt">
+      <created>1491658683314</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1491658683314</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Event Bus eingebaut &#10;">
+      <created>1491664376783</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1491664376783</updated>
+    </task>
+    <task id="LOCAL-00003" summary="GUI erweitert&#10;">
+      <created>1491738194214</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1491738194214</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Events erweitert">
+      <created>1491739862815</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1491739862815</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Events in Package">
+      <created>1491740088425</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1491740088425</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update, Delete, Insert - getBookFromDB suche nach Buch mit Titel - allBookFromDB gibt alle bücher aus der Datenbank als Liste">
+      <created>1491768894447</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1491768894447</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fertigen AES code gefunden und eingefügt, muss ihn noch auf die DB anpassen- lass dich nicht durch die Kommentare verwirren in der Main :P">
+      <created>1491769708559</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1491769708559</updated>
+    </task>
+    <task id="LOCAL-00008" summary="hab gerade nachgelesen, ist ECB verschlüsselt, also der dicke bullshit! ich schaus mir morgen nochmal an :p">
+      <created>1491770626976</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1491770626976</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Datenbankpasswort AES CBC verschlüsselt, Memento implementiert, Komponent Klassen angelegt - bin mir noch nicht sicher wie ich das machen soll">
+      <created>1491835098578</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1491835098578</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Komponenten eingefügt, Liste von Funktionen und ausführen implementiert (Beim ausfphren übergebe ich noch keine Parameter, muss man noch irgendwie lösen :P)&#10;">
+      <created>1491927028443</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1491927028443</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Komponenten Angepasst">
+      <created>1492009835193</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1492009835193</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Ohne externe Lib Aes">
+      <created>1492087450506</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1492087450506</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Ohne externe Lib Aes">
+      <created>1492166085835</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1492166085835</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Update">
+      <created>1492166709502</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1492166709502</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Data base Sell und Buy eingefügt">
+      <created>1492172281202</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1492172281202</updated>
+    </task>
+    <task id="LOCAL-00016" summary="getClass">
+      <created>1492174023884</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1492174023884</updated>
+    </task>
+    <task id="LOCAL-00017" summary="getClass">
+      <created>1492174429289</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1492174429289</updated>
+    </task>
+    <task id="LOCAL-00018" summary="du weißt">
+      <created>1492175195314</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1492175195314</updated>
+    </task>
+    <task id="LOCAL-00019" summary="pfusch">
+      <created>1492191264901</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1492191264901</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="104541000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="132" y="194" width="1279" height="692" extended-state="0" />
+    <editor active="true" />
+>>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842416" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -786,6 +995,24 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31606767" sideWeight="0.46666667" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28522336" sideWeight="0.5241489" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46391752" sideWeight="0.47585115" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.49583334" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24861442" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.49375" order="1" side_tool="false" content_ui="tabs" />
+>>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -806,6 +1033,29 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="GUI wird angezeigt" />
+    <MESSAGE value="Event Bus eingebaut &#10;" />
+    <MESSAGE value="GUI erweitert&#10;" />
+    <MESSAGE value="Events erweitert" />
+    <MESSAGE value="Events in Package" />
+    <MESSAGE value="Update, Delete, Insert - getBookFromDB suche nach Buch mit Titel - allBookFromDB gibt alle bücher aus der Datenbank als Liste" />
+    <MESSAGE value="Fertigen AES code gefunden und eingefügt, muss ihn noch auf die DB anpassen- lass dich nicht durch die Kommentare verwirren in der Main :P" />
+    <MESSAGE value="hab gerade nachgelesen, ist ECB verschlüsselt, also der dicke bullshit! ich schaus mir morgen nochmal an :p" />
+    <MESSAGE value="Datenbankpasswort AES CBC verschlüsselt, Memento implementiert, Komponent Klassen angelegt - bin mir noch nicht sicher wie ich das machen soll" />
+    <MESSAGE value="Komponenten eingefügt, Liste von Funktionen und ausführen implementiert (Beim ausfphren übergebe ich noch keine Parameter, muss man noch irgendwie lösen :P)&#10;" />
+    <MESSAGE value="Komponenten Angepasst" />
+    <MESSAGE value="Ohne externe Lib Aes" />
+    <MESSAGE value="Update" />
+    <MESSAGE value="Data base Sell und Buy eingefügt" />
+    <MESSAGE value="getClass" />
+    <MESSAGE value="du weißt" />
+    <MESSAGE value="pfusch" />
+    <option name="LAST_COMMIT_MESSAGE" value="pfusch" />
+  </component>
+>>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -1105,6 +1355,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Persistence/src/HSQLDBManager.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="188">
           <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
           <folding>
@@ -1113,6 +1364,16 @@
             <marker date="1492192815979" expanded="true" signature="3640:3678" ph="SELECT title... book" />
             <marker date="1492192815979" expanded="true" signature="4645:4724" ph="SELECT title... book" />
             <marker date="1492192815979" expanded="true" signature="5467:5546" ph="SELECT title... book" />
+=======
+        <state relative-caret-position="493">
+          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1492191437664" expanded="true" signature="2740:2809" ph="SELECT title... book" />
+            <marker date="1492191437664" expanded="true" signature="3588:3626" ph="SELECT title... book" />
+            <marker date="1492191437664" expanded="true" signature="4593:4672" ph="SELECT title... book" />
+            <marker date="1492191437664" expanded="true" signature="5415:5494" ph="SELECT title... book" />
+>>>>>>> e88ed13a1c02b91dc5ccc0f3ea7e653c97a58108
           </folding>
         </state>
       </provider>
