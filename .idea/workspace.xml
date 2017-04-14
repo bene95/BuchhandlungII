@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95d41c20-8335-4d68-a271-91ea61ff79b5" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Model1/Book.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Repository/SoftwareRepository.java" afterPath="$PROJECT_DIR$/Repository/SoftwareRepository.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -105,8 +103,8 @@
       <file leaf-file-name="SoftwareRepository.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Repository/SoftwareRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="118" column="36" lean-forward="true" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="36" />
+            <state relative-caret-position="376">
+              <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -882,7 +880,7 @@
       <workItem from="1491834958991" duration="1567000" />
       <workItem from="1491886975025" duration="36677000" />
       <workItem from="1492165843787" duration="7093000" />
-      <workItem from="1492173088926" duration="912000" />
+      <workItem from="1492173088926" duration="1323000" />
     </task>
     <task id="LOCAL-00001" summary="GUI wird angezeigt">
       <created>1491658683314</created>
@@ -989,11 +987,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492172281202</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="getClass">
+      <created>1492174023884</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1492174023884</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86891000" />
+    <option name="totallyTimeSpent" value="87302000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1052,7 +1057,8 @@
     <MESSAGE value="Ohne externe Lib Aes" />
     <MESSAGE value="Update" />
     <MESSAGE value="Data base Sell und Buy eingefügt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Data base Sell und Buy eingefügt" />
+    <MESSAGE value="getClass" />
+    <option name="LAST_COMMIT_MESSAGE" value="getClass" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1450,8 +1456,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Repository/SoftwareRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="118" column="36" lean-forward="true" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="36" />
+        <state relative-caret-position="376">
+          <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
