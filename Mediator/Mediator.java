@@ -1,12 +1,13 @@
 package Mediator;
 
-import Parser.*;
+import Parser.PersistenceParser;
+import Parser.SearchParser;
+import Parser.TransactionParser;
 import Repository.MethodRepository;
 import ViewModel.Events.*;
 import ViewModel.Subscriber;
 import com.google.common.eventbus.Subscribe;
-
-import java.lang.reflect.Method;
+import src.HSQLDBManager;
 
 
 public class Mediator extends Subscriber {
@@ -29,13 +30,8 @@ public class Mediator extends Subscriber {
     //TODO Mediator Implementieren
         eventBus.post(new SaveEvent(eventCounter++));
         System.out.println("test");
-        methodRepository =  searchParser.parse("NewBook");
-        methodRepository.execute(newBookEvent.getBook());
-
-    }
-    @Subscribe
-    public void receive(SearchEvent searchEvent){
-        //TODO Mediator Implementieren
+        methodRepository =  searchParser.parse("insert");
+        methodRepository.execute(newBookEvent.getBook(), HSQLDBManager.instance);
         eventBus.post(new SaveEvent(eventCounter++));
         searchParser.parse("SearchBook");
     }
