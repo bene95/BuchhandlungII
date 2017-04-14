@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db0acefa-8c37-4767-a3eb-efc4f2e69da7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_2_1__2_.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Persistence/Persistence.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Persistence/src/Book.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Persistence/src/FormatParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/FormatParser.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/Book.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Book__2_.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Book__3_.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Book__4_.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Book__5_.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/commons_codec_1_10.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/guava.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Persistence/src/BookP.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Persistence.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Book.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Book.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BuchhandlungII.iml" afterPath="$PROJECT_DIR$/BuchhandlungII.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ModelNew/ModelNew.iml" afterPath="$PROJECT_DIR$/ModelNew/ModelNew.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Persistence/src/AdvancedEncryptionStandard.java" afterPath="$PROJECT_DIR$/Persistence/src/AdvancedEncryptionStandard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Persistence/src/Component.java" afterPath="$PROJECT_DIR$/Persistence/src/Component.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Persistence/src/Configuration.java" afterPath="$PROJECT_DIR$/Persistence/src/Configuration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Persistence/src/HSQLDBManager.java" afterPath="$PROJECT_DIR$/Persistence/src/HSQLDBManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Persistence/src/IComponent.java" afterPath="$PROJECT_DIR$/Persistence/src/IComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Repository/MethodRepository.java" afterPath="$PROJECT_DIR$/Repository/MethodRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/View/Buchhandlung.java" afterPath="$PROJECT_DIR$/View/Buchhandlung.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -182,6 +154,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -791,7 +764,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6115000" />
+    <option name="totallyTimeSpent" value="6172000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
