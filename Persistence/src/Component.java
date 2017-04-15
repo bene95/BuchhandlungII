@@ -18,7 +18,7 @@ public class Component  {
     }
 
     public void insert(String format){
-        System.out.println("ODERDOCH!!!!");
+        System.out.println("AUFRUF DER HSQLDB");
         ArrayList<Book> books= FormatParser.fromFormat(format);
         Book book = books.get(0);
 
@@ -57,7 +57,7 @@ public class Component  {
 
         @Override
         public void insert(String format) {
-            System.out.println("bla");
+            System.out.println("IM PORT");
         Component.this.insert(format);
         }
 

@@ -49,13 +49,13 @@ public enum HSQLDBManager {
 
     public void insert(ArrayList<Book> books)
     {
-        System.out.println("fff");
+        System.out.println("INSERT METHODE der HSQLDB");
 
         System.out.println();
 
         System.out.println(books.get(0).getTitel());
         Book book = books.get(0);
-        System.out.println("Hier");
+        System.out.println("VOR UPDATE AUFRUF");
         update("INSERT INTO book (title,quantity,uuid) " +
                 "VALUES (\'" + book.getTitel() + "\',\'" + book.getQuantity() + "\',\'" + book.getUuid() + "\');");
 
