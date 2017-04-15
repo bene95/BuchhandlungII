@@ -7,6 +7,7 @@ import src.FormatParser;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.sql.Connection;
 import java.util.ArrayList;
 
 public class MethodRepository {
@@ -18,7 +19,7 @@ public class MethodRepository {
         this.methodName = methodName;
     }
 
-    public void execute(Book book, HSQLDBManager hsqldbManager) {
+    public void execute(Book book, Connection connection) {
        Object instance;
        Object port;
         try {
@@ -31,10 +32,10 @@ public class MethodRepository {
             System.out.println("port      : " + port.hashCode());
 
             //System.out.println("version   : " + Configuration.instance.getSortTyp());
-            Method getVersion = port.getClass().getMethod(methodName,String.class);
+            Method getVersion = port.getClass().getMethod(methodName,String.class,Connection.class);
 
 
-            getVersion.invoke(port, format);
+            getVersion.invoke(port, format,connection);
             /*try {
                 method.invoke(obj, book, hsqldbManager);
             } catch (IllegalAccessException e) {

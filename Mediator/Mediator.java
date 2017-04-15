@@ -7,7 +7,11 @@ import Repository.MethodRepository;
 import ViewModel.Events.*;
 import ViewModel.Subscriber;
 import com.google.common.eventbus.Subscribe;
-import Repository.HSQLDBManager;
+import src.AdvancedEncryptionStandard;
+import src.Configuration;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
 
 
 public class Mediator extends Subscriber {
@@ -17,6 +21,19 @@ public class Mediator extends Subscriber {
     TransactionParser transactionParser = new TransactionParser(persistenceParser);
     SearchParser searchParser = new SearchParser(transactionParser);
     MethodRepository methodRepository;
+
+
+    //Instanz Database
+    private Connection connection = null;
+    private String driverName = "jdbc:hsqldb:file:";
+    private String username = "ROOT";
+    private String password = "IIKsI2KRqdgNZ+fFyDsYgw==";
+    private String userDir = Configuration.instance.userDirectory;
+
+    //AES values
+    //private String key = "Bar12345Bar12345"; // 128 bit key
+    private String key = "PasswordPassword";
+    private String initVector = "RandomInitVector"; // 16 bytes IV
     public Mediator(int id, com.google.common.eventbus.EventBus eventBus) {
         super(id);
         this.eventBus = eventBus;
@@ -29,34 +46,64 @@ public class Mediator extends Subscriber {
     public void receive(NewBookEvent newBookEvent){
     //TODO Mediator Implementieren
         eventBus.post(new SaveEvent(eventCounter++));
-        System.out.println("test");
+        System.out.println("newBookEvent");
+        Connection connection = startup();
         methodRepository =  searchParser.parse("insert");
-        methodRepository.execute(newBookEvent.getBook(), HSQLDBManager.instance);
+        methodRepository.execute(newBookEvent.getBook(), connection);
         eventBus.post(new SaveEvent(eventCounter++));
+        searchParser.parse("NewBook");
+    }
+    @Subscribe
+    public void receive(SearchEvent searchBook){
+        //TODO Mediator Implementieren
+        eventBus.post(new SaveEvent(eventCounter++));
+        methodRepository =  searchParser.parse("insert");
         searchParser.parse("SearchBook");
     }
     @Subscribe
     public void receive(UpdateEvent updateEvent){
         //TODO Mediator Implementieren
         eventBus.post(new SaveEvent(eventCounter++));
+        System.out.println("Update");
+        methodRepository =  searchParser.parse("update");
         searchParser.parse("UpdateBook");
     }
     @Subscribe
     public void receive(DeleteEvent deleteEvent){
         //TODO Mediator Implementieren
         eventBus.post(new SaveEvent(eventCounter++));
+        System.out.println("Delete");
+        methodRepository =  searchParser.parse("Delete");
         searchParser.parse("DeleteBook");
     }
     @Subscribe
     public void receive(SellEvent sellEvent){
         //TODO Mediator Implementieren
         eventBus.post(new SaveEvent(eventCounter++));
+        System.out.println("Update");
         searchParser.parse("SellBook");
     }
     @Subscribe
     public void receive(BuyEvent buyEvent){
         //TODO Mediator Implementieren
         eventBus.post(new SaveEvent(eventCounter++));
+        System.out.println("Update");
         searchParser.parse("BuyBook");
+    }
+
+
+    public Connection startup() {
+        try {
+            Class.forName("org.hsqldb.jdbcDriver");
+            String databaseURL = driverName + Configuration.instance.userDirectory + "\\database\\database";
+            System.out.println(password);
+            System.out.println(AdvancedEncryptionStandard.decrypt(key,initVector,password));
+            connection = DriverManager.getConnection(databaseURL,"SA","");
+            System.out.println(AdvancedEncryptionStandard.decrypt(key,initVector,password));
+            return connection;
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        return null;
     }
 }

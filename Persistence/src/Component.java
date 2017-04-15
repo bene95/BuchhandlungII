@@ -3,6 +3,7 @@
 
 
 import java.lang.reflect.Method;
+import java.sql.Connection;
 import java.util.ArrayList;
 
 public class Component  {
@@ -17,13 +18,13 @@ public class Component  {
 
     }
 
-    public void insert(String format){
+    public void insert(String format, Connection connection){
         System.out.println("AUFRUF DER HSQLDB");
         ArrayList<Book> books= FormatParser.fromFormat(format);
         Book book = books.get(0);
 
         System.out.println(book);
-         HSQLDBManager.instance.insert(books);
+         HSQLDBManager.instance.insert(books,connection);
     }
 
     public void update() {
@@ -56,9 +57,9 @@ public class Component  {
         }
 
         @Override
-        public void insert(String format) {
+        public void insert(String format, Connection connection) {
             System.out.println("IM PORT");
-        Component.this.insert(format);
+        Component.this.insert(format, connection);
         }
 
         @Override

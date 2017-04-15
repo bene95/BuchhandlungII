@@ -21,12 +21,21 @@ public enum HSQLDBManager {
     Statement stmt = null;
     ResultSet result = null;
 
-
-    //Executes Statement
-    public synchronized void update(String sqlStatement,Connection connection) {
+    //Connect to Database which is located Project File
+    public void startup() {
         try {
-           // HSQLDBManager.instance.startup();
-            System.out.println(connection.createStatement());
+            Class.forName("org.hsqldb.jdbcDriver");
+            String databaseURL = driverName + userDir + "\\database\\database";
+            connection = DriverManager.getConnection(databaseURL,username,AdvancedEncryptionStandard.decrypt(key, initVector,
+                    password));
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+    //Executes Statement
+    public synchronized void update(String sqlStatement) {
+        try {
+            HSQLDBManager.instance.startup();
             Statement statement = connection.createStatement();
             int result = statement.executeUpdate(sqlStatement);
             if (result == -1)
@@ -37,18 +46,8 @@ public enum HSQLDBManager {
             System.out.println(sqle.getMessage());
         }
     }
-    /*
-        public void startup() {
-            try {
-                Class.forName("org.hsqldb.jdbcDriver");
-                String databaseURL = driverName + userDir + "\\database\\database";
-                connection = DriverManager.getConnection(databaseURL,username,AdvancedEncryptionStandard.decrypt(key, initVector,
-                        password));
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
-            }
-        }*/
-    public void insert(ArrayList<Book> books, Connection connection)
+
+    public void insert(ArrayList<Book> books)
     {
         System.out.println("INSERT METHODE der HSQLDB");
 
@@ -56,14 +55,13 @@ public enum HSQLDBManager {
 
         System.out.println(books.get(0).getTitel());
         Book book = books.get(0);
-        this.connection = connection;
         System.out.println("VOR UPDATE AUFRUF");
         update("INSERT INTO book (title,quantity,uuid) " +
-                "VALUES (\'" + book.getTitel() + "\',\'" + book.getQuantity() + "\',\'" + book.getUuid() + "\');",connection);
+                "VALUES (\'" + book.getTitel() + "\',\'" + book.getQuantity() + "\',\'" + book.getUuid() + "\');");
 
     }
 
-/*
+
     public void delete(Book book) {
         update("DELETE FROM book WHERE uuid = \'" + book.getUuid() +"\';");
     }
@@ -81,7 +79,7 @@ public enum HSQLDBManager {
     // One Book With Title
     public Book getBookFromDB(String title) {
         try {
-            //HSQLDBManager.instance.startup();
+            HSQLDBManager.instance.startup();
             stmt = connection.createStatement();
             String getBook = "SELECT title, quantity, uuid FROM book WHERE title = \'" + title +"\';";
             result = stmt.executeQuery(getBook);
@@ -101,7 +99,7 @@ public enum HSQLDBManager {
     public ArrayList<Book> allBookFromDB() {
         ArrayList<Book> allB = new ArrayList<>();
         try {
-            //HSQLDBManager.instance.startup();
+            HSQLDBManager.instance.startup();
             stmt = connection.createStatement();
             String getBook = "SELECT title, quantity, uuid FROM book;";
             result = stmt.executeQuery(getBook);
@@ -118,7 +116,7 @@ public enum HSQLDBManager {
         }
         return null;
     }
-*/
+
 
     public void shutdown() {
         try {
@@ -129,10 +127,10 @@ public enum HSQLDBManager {
             System.out.println(sqle.getMessage());
         }
     }
-/*
+
     public void buy(Book book){
         try {
-            //HSQLDBManager.instance.startup();
+            HSQLDBManager.instance.startup();
             stmt = connection.createStatement();
             String getBook = "SELECT title, quantity, uuid FROM book WHERE title = \'" + book.getTitel() +"\';";
             result = stmt.executeQuery(getBook);
@@ -155,7 +153,7 @@ public enum HSQLDBManager {
 
     public void sell(Book book){
         try {
-            //HSQLDBManager.instance.startup();
+            HSQLDBManager.instance.startup();
             stmt = connection.createStatement();
             String getBook = "SELECT title, quantity, uuid FROM book WHERE title = \'" + book.getTitel() +"\';";
             result = stmt.executeQuery(getBook);
@@ -176,11 +174,7 @@ public enum HSQLDBManager {
 
 
     }
-
- */
-
-
- /*
+    //Currently no use
     public void init() {
         password = AdvancedEncryptionStandard.encrypt(key,initVector,"ROOT");
         update("DROP TABLE book");
