@@ -6,12 +6,14 @@ import Parser.TransactionParser;
 import Repository.MethodRepository;
 import ViewModel.Events.*;
 import ViewModel.Subscriber;
+import com.book.Book;
 import com.google.common.eventbus.Subscribe;
 import src.AdvancedEncryptionStandard;
 import src.Configuration;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.util.ArrayList;
 
 
 public class Mediator extends Subscriber {
@@ -45,54 +47,60 @@ public class Mediator extends Subscriber {
 
     @Subscribe
     public void receive(NewBookEvent newBookEvent){
-    //TODO Mediator Implementieren
         eventBus.post(new SaveEvent(eventCounter++));
-        System.out.println("newBookEvent");
         Connection connection = startup();
         methodRepository =  searchParser.parse("insert");
-        methodRepository.execute(newBookEvent.getBook(), connection);
-        eventBus.post(new SaveEvent(eventCounter++));
-        searchParser.parse("NewBook");
+        ArrayList<Book> books = new ArrayList<Book>();
+        books.add(newBookEvent.getBook());
+        methodRepository.execute(books, connection);
+        //eventBus.post(new SaveEvent(eventCounter++));
+       //searchParser.parse("NewBook");
     }
     @Subscribe
     public void receive(SearchEvent searchBook){
-        //TODO Mediator Implementieren
         eventBus.post(new SaveEvent(eventCounter++));
-        methodRepository =  searchParser.parse("insert");
-        searchParser.parse("SearchBook");
+        Connection connection = startup();
+        methodRepository =  searchParser.parse("select");
+        methodRepository.execute(searchBook.getBook().getTitel(),connection);
+        //searchParser.parse("select");
     }
     @Subscribe
     public void receive(UpdateEvent updateEvent){
-        //TODO Mediator Implementieren
         eventBus.post(new SaveEvent(eventCounter++));
-        System.out.println("Update");
+        Connection connection = startup();
         methodRepository =  searchParser.parse("update");
-        searchParser.parse("UpdateBook");
+        ArrayList<Book> books = new ArrayList<Book>();
+        books.add(updateEvent.getOldTitle());
+        books.add(updateEvent.getNewTitle());
+       methodRepository.execute(books,connection);
     }
     @Subscribe
     public void receive(DeleteEvent deleteEvent){
-        //TODO Mediator Implementieren
         eventBus.post(new SaveEvent(eventCounter++));
-        System.out.println("Delete");
         Connection connection = startup();
         methodRepository =  searchParser.parse("delete");
-        methodRepository.execute(deleteEvent.getBook(), connection);
-        eventBus.post(new SaveEvent(eventCounter++));
-        searchParser.parse("DeleteBook");
+        ArrayList<Book> books = new ArrayList<Book>();
+        books.add(deleteEvent.getBook());
+        methodRepository.execute(books, connection);
+
     }
     @Subscribe
     public void receive(SellEvent sellEvent){
-        //TODO Mediator Implementieren
         eventBus.post(new SaveEvent(eventCounter++));
-        System.out.println("Update");
-        searchParser.parse("SellBook");
+        Connection connection = startup();
+        methodRepository = searchParser.parse("sell");
+        ArrayList<Book> books = new ArrayList<Book>();
+        books.add(sellEvent.getBook());
+        methodRepository.execute(books, connection);
     }
     @Subscribe
     public void receive(BuyEvent buyEvent){
-        //TODO Mediator Implementieren
         eventBus.post(new SaveEvent(eventCounter++));
-        System.out.println("Update");
-        searchParser.parse("BuyBook");
+        Connection connection = startup();
+        methodRepository = searchParser.parse("buy");
+        ArrayList<Book> books = new ArrayList<Book>();
+        books.add(buyEvent.getBook());
+        methodRepository.execute(books, connection);
     }
 
 

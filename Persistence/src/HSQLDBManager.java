@@ -37,6 +37,14 @@ public enum HSQLDBManager {
             System.out.println(sqle.getMessage());
         }
     }
+
+    public void update(ArrayList<Book> books,Connection connection) {
+        Book oldBook = books.get(0);
+        Book newBook = books.get(1);
+        //TODO UPDATE Statment
+        String sqlStatement = "";
+        update(sqlStatement,connection);
+    }
     /*
         public void startup() {
             try {
@@ -50,12 +58,13 @@ public enum HSQLDBManager {
         }*/
     public void insert(ArrayList<Book> books, Connection connection)
     {
+        Book book = books.get(0);
         System.out.println("INSERT METHODE der HSQLDB");
 
         System.out.println();
 
         System.out.println(books.get(0).getTitel());
-        Book book = books.get(0);
+
         this.connection = connection;
         System.out.println("VOR UPDATE AUFRUF");
         update("INSERT INTO book (title,quantity,uuid) " +
@@ -64,7 +73,8 @@ public enum HSQLDBManager {
     }
 
 
-    public void delete(Book book,Connection connection) {
+    public void delete(ArrayList<Book> books,Connection connection) {
+        Book book = books.get(0);
         update("DELETE FROM book WHERE title = \'" + book.getTitel() +"\';",connection);
     }
 

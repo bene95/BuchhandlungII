@@ -27,21 +27,28 @@ public class Component  {
         HSQLDBManager.instance.insert(books,connection);
     }
 
-    public void update() {
-
+    public void update(String format, Connection connection) {
+        System.out.println("AUFRUF DER HSQLDB UPDATE");
+        ArrayList<Book> books = FormatParser.fromFormat(format);
+        HSQLDBManager.instance.update(books,connection);
     }
 
     public void delete(String format, Connection connection) {
         System.out.println("AUFRUF DER HSQLDB Delete");
         ArrayList<Book> books= FormatParser.fromFormat(format);
-        Book book = books.get(0);
-        HSQLDBManager.instance.delete(book,connection);
+
+        HSQLDBManager.instance.delete(books,connection);
 
     }
 
 
-    public void select() {
+    public String select(String format, Connection connection) {
+        System.out.println("AUFRUF DER HSQLDB SELECT");
+        ArrayList<Book> books= FormatParser.fromFormat(format);
+        Book book = books.get(0);
+       //TODO SELECT
 
+        return FormatParser.toFormat(books);
     }
     public String getVersion() {
         return"Persistence";
@@ -66,8 +73,8 @@ public class Component  {
         }
 
         @Override
-        public void update() {
-
+        public void update(String format,Connection connection) {
+            Component.this.update(format,connection);
         }
 
         @Override
@@ -76,8 +83,8 @@ public class Component  {
         }
 
         @Override
-        public void select() {
-
+        public String select(String format, Connection connection) {
+        return  Component.this.select(format,connection);
         }
     }
 }

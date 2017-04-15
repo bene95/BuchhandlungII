@@ -12,4 +12,8 @@ public class SearchEvent extends Event{
         super(id);
         this.book = book;
     }
+
+    public Book getBook() {
+        return book;
+    }
 }

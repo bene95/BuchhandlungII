@@ -87,7 +87,7 @@ public class SoftwareRepository {
         }
 
 
-        public void executeMethods(Class cl, String methodName){
+        /*public void executeMethods(Class cl, String methodName){
             try {
                 Object obj = cl.newInstance();
                 Method method = cl.getDeclaredMethod(methodName, Book.class);
@@ -107,7 +107,7 @@ public class SoftwareRepository {
             }
 
 
-        }
+        }*/
 
     public boolean getMethod(String methodeName, String className) {
        Class c1 = getClass(className);
@@ -122,23 +122,20 @@ public class SoftwareRepository {
 
     public Class getClass(String archive) {
             for (int i = 0 ; i<=2 ; i++){
-                System.out.println(Archive.intValue(i));
+               // System.out.println(Archive.intValue(i));
                 Archive s = (Archive) Archive.intValue(i);
-                System.out.println(s.toString());
-                System.out.println(archive);
+
                 if(s.toString() ==  archive) {
                     String fileSeparator = Configuration.instance.fileSeparator;
                     String name = Configuration.instance.userDirectory + fileSeparator+ archive +fileSeparator + archive +".jar";
-
-
                         Object instance = null;
 
                         try {
-                            System.out.println("pathToJar : " + name);
+                           // System.out.println("pathToJar : " + name);
                             URL[] urls = {new File(name).toURI().toURL()};
                             URLClassLoader urlClassLoader = new URLClassLoader(urls,Application.class.getClassLoader());
                             Class clazz = Class.forName("Component",true,urlClassLoader);
-                            System.out.println("clazz     : " + clazz.toString());
+                           // System.out.println("clazz     : " + clazz.toString());
                             return clazz;
 
                         } catch (Exception e) {

@@ -3,6 +3,7 @@
 
 
 import java.lang.reflect.Method;
+import java.util.ArrayList;
 
 public class Component  {
     private static Component instance = new Component();
@@ -16,9 +17,11 @@ public class Component  {
 
     }
 
-    public void search(String title){
-        HSQLDBManager.instance.getBookFromDB(title);
-
+    public String search(String title){
+       Book book =  HSQLDBManager.instance.getBookFromDB(title);
+        ArrayList<Book> books = new ArrayList<Book>();
+        books.add(book);
+        return FormatParser.toFormat(books);
     }
 
 
@@ -40,8 +43,8 @@ public class Component  {
 
 
         @Override
-        public void search(String title) {
-            search(title);
+        public String search(String title) {
+            return search(title);
         }
     }
 }
