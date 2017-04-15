@@ -27,13 +27,14 @@ public class Mediator extends Subscriber {
     private Connection connection = null;
     private String driverName = "jdbc:hsqldb:file:";
     private String username = "ROOT";
-    private String password = "IIKsI2KRqdgNZ+fFyDsYgw==";
+    private String password = "cAvCRxkD+hLjGjr9sYvZdA==";
     private String userDir = Configuration.instance.userDirectory;
 
     //AES values
     //private String key = "Bar12345Bar12345"; // 128 bit key
     private String key = "PasswordPassword";
     private String initVector = "RandomInitVector"; // 16 bytes IV
+
     public Mediator(int id, com.google.common.eventbus.EventBus eventBus) {
         super(id);
         this.eventBus = eventBus;
@@ -73,7 +74,10 @@ public class Mediator extends Subscriber {
         //TODO Mediator Implementieren
         eventBus.post(new SaveEvent(eventCounter++));
         System.out.println("Delete");
-        methodRepository =  searchParser.parse("Delete");
+        Connection connection = startup();
+        methodRepository =  searchParser.parse("delete");
+        methodRepository.execute(deleteEvent.getBook(), connection);
+        eventBus.post(new SaveEvent(eventCounter++));
         searchParser.parse("DeleteBook");
     }
     @Subscribe
@@ -96,10 +100,8 @@ public class Mediator extends Subscriber {
         try {
             Class.forName("org.hsqldb.jdbcDriver");
             String databaseURL = driverName + Configuration.instance.userDirectory + "\\database\\database";
-            System.out.println(password);
-            System.out.println(AdvancedEncryptionStandard.decrypt(key,initVector,password));
-            connection = DriverManager.getConnection(databaseURL,"SA","");
-            System.out.println(AdvancedEncryptionStandard.decrypt(key,initVector,password));
+            System.out.println(AdvancedEncryptionStandard.encrypt(key,initVector,"ROOT"));
+            connection = DriverManager.getConnection(databaseURL,username,AdvancedEncryptionStandard.decrypt(key,initVector,password));
             return connection;
         } catch (Exception e) {
             System.out.println(e.getMessage());

@@ -19,20 +19,23 @@ public class Component  {
     }
 
     public void insert(String format, Connection connection){
-        System.out.println("AUFRUF DER HSQLDB");
+        System.out.println("AUFRUF DER HSQLDB INSERT");
         ArrayList<Book> books= FormatParser.fromFormat(format);
         Book book = books.get(0);
 
         System.out.println(book);
-         HSQLDBManager.instance.insert(books,connection);
+        HSQLDBManager.instance.insert(books,connection);
     }
 
     public void update() {
 
     }
 
-
-    public void delete() {
+    public void delete(String format, Connection connection) {
+        System.out.println("AUFRUF DER HSQLDB Delete");
+        ArrayList<Book> books= FormatParser.fromFormat(format);
+        Book book = books.get(0);
+        HSQLDBManager.instance.delete(book,connection);
 
     }
 
@@ -58,7 +61,7 @@ public class Component  {
 
         @Override
         public void insert(String format, Connection connection) {
-            System.out.println("IM PORT");
+
         Component.this.insert(format, connection);
         }
 
@@ -68,8 +71,8 @@ public class Component  {
         }
 
         @Override
-        public void delete() {
-
+        public void delete(String format, Connection connection) {
+            Component.this.delete(format, connection);
         }
 
         @Override

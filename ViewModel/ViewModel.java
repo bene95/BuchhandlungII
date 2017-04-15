@@ -20,8 +20,6 @@ public class ViewModel {
 
 
     public void createNewBook(String title){
-
-
         Book book = new Book();
         book.setTitel(title);
         eventBus.post(new NewBookEvent(eventCounter++,book));
@@ -36,7 +34,9 @@ public class ViewModel {
     }
     public void deleteBook(String bookTitle){
         saveState();
-        eventBus.post(new DeleteEvent(eventCounter++,bookTitle));
+        Book book = new Book();
+        book.setTitel(bookTitle);
+        eventBus.post(new DeleteEvent(eventCounter++,book));
     }
 
     public void searchBook(String searchTitle) {

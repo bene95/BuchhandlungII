@@ -58,7 +58,7 @@ public class Buchhandlung extends JFrame {
             Configuration.instance.viewModel.updateBook(txtUpdateBookOldTitle.toString(), txtUpdateBookNewTitle.toString());
         });
         btnDeleteBookSubmit.addActionListener(actionEvent -> {
-            Configuration.instance.viewModel.deleteBook(txtDeleteBookTitle.toString());
+            Configuration.instance.viewModel.deleteBook(txtDeleteBookTitle.getText());
         });
         btnSearchBookSubmit.addActionListener(new ActionListener() {
             @Override

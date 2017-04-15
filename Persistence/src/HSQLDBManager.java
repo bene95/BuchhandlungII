@@ -32,7 +32,7 @@ public enum HSQLDBManager {
             if (result == -1)
                 System.out.println("error executing " + sqlStatement);
             statement.close();
-            HSQLDBManager.instance.shutdown();
+            HSQLDBManager.instance.shutdown(connection);
         } catch (SQLException sqle) {
             System.out.println(sqle.getMessage());
         }
@@ -63,11 +63,12 @@ public enum HSQLDBManager {
 
     }
 
-/*
-    public void delete(Book book) {
-        update("DELETE FROM book WHERE uuid = \'" + book.getUuid() +"\';");
+
+    public void delete(Book book,Connection connection) {
+        update("DELETE FROM book WHERE title = \'" + book.getTitel() +"\';",connection);
     }
 
+  /*
     public void delete(String uuid) {
         update("DELETE FROM book WHERE uuid = \'" + uuid +"\';");
     }
@@ -120,7 +121,7 @@ public enum HSQLDBManager {
     }
 */
 
-    public void shutdown() {
+    public void shutdown(Connection connection) {
         try {
             Statement statement = connection.createStatement();
             statement.execute("SHUTDOWN");

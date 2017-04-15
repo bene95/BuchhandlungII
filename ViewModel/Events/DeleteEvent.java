@@ -1,13 +1,19 @@
 package ViewModel.Events;
 
+import com.book.Book;
+
 /**
  * Created by wn00084650 on 08.04.2017.
  */
 public class DeleteEvent extends Event {
-    private String bookTitle;
+    public Book getBook() {
+        return book;
+    }
 
-    public DeleteEvent(int id, String bookTitle) {
+    private Book book;
+
+    public DeleteEvent(int id, Book book) {
         super(id);
-        this.bookTitle = bookTitle;
+        this.book = book;
     }
 }
