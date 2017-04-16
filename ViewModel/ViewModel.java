@@ -25,7 +25,7 @@ public class ViewModel {
         eventBus.post(new NewBookEvent(eventCounter++,book));
     }
     public void updateBook(String oldTitle,String newTitle){
-        saveState();
+
         Book oldBook = new Book();
         oldBook.setTitel(oldTitle);
         Book newBook = new Book();
@@ -33,14 +33,14 @@ public class ViewModel {
       eventBus.post(new UpdateEvent(eventCounter++,oldBook,newBook) );
     }
     public void deleteBook(String bookTitle){
-        saveState();
+
         Book book = new Book();
         book.setTitel(bookTitle);
         eventBus.post(new DeleteEvent(eventCounter++,book));
     }
 
     public void searchBook(String searchTitle) {
-        saveState();
+
         Book book = new Book();
         book.setTitel(searchTitle);
         eventBus.post(new SearchEvent(eventCounter++,book));
@@ -48,7 +48,7 @@ public class ViewModel {
     }
 
     public void sellBook(String title, String quantitiy) {
-        saveState();
+
         Book book = new Book();
         book.setTitel(title);
         book.setQuantity(quantitiy);

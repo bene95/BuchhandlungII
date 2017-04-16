@@ -27,6 +27,7 @@ public class MethodRepository {
             instance = clazz.getMethod("getInstance",new Class[0]).invoke(null,new Object[0]);
             port = clazz.getDeclaredField("port").get(instance);
             //System.out.println("port      : " + port.hashCode());
+
             Method getVersion = port.getClass().getMethod(methodName,String.class,Connection.class);
             getVersion.invoke(port, format,connection);
 

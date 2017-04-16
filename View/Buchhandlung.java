@@ -55,7 +55,7 @@ public class Buchhandlung extends JFrame {
         });
         btnUpdateBookSubmit.addActionListener(actionEvent -> {
 
-            Configuration.instance.viewModel.updateBook(txtUpdateBookOldTitle.toString(), txtUpdateBookNewTitle.toString());
+            Configuration.instance.viewModel.updateBook(txtUpdateBookOldTitle.getText(), txtUpdateBookNewTitle.getText());
         });
         btnDeleteBookSubmit.addActionListener(actionEvent -> {
             Configuration.instance.viewModel.deleteBook(txtDeleteBookTitle.getText());
@@ -63,13 +63,13 @@ public class Buchhandlung extends JFrame {
         btnSearchBookSubmit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                Configuration.instance.viewModel.searchBook(txtSearchBook.toString());
+                Configuration.instance.viewModel.searchBook(txtSearchBook.getText());
             }
         });
         btnSellBookSubmit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-            Configuration.instance.viewModel.sellBook(txtSellBookTitle.toString(),txtSellBookQuantity.toString());
+            Configuration.instance.viewModel.sellBook(txtSellBookTitle.getText(),txtSellBookQuantity.getText());
             }
         });
         undoButton.addActionListener(new ActionListener() {
@@ -81,7 +81,7 @@ public class Buchhandlung extends JFrame {
         btnBuyBookSubmit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                Configuration.instance.viewModel.buyBook(txtSellBookTitle.toString(),txtSellBookQuantity.toString());
+                Configuration.instance.viewModel.buyBook(txtSellBookTitle.getText(),txtSellBookQuantity.getText());
             }
         });
     }

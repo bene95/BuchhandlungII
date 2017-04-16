@@ -27,6 +27,7 @@ public class Memento extends Subscriber {
     }
     @Subscribe
     public void receive(SaveEvent saveEvent){
+
         System.out.println("Save");
         databaseCareTaker.setDatabaseMemento(new DatabaseMemento(dataBase));
     }
