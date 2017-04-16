@@ -19,6 +19,7 @@ public class Component  {
     }
 
     public void insert(String format, Connection connection){
+        System.out.println("Componet INSERT");
         System.out.println("AUFRUF DER HSQLDB INSERT");
         ArrayList<Book> books= FormatParser.fromFormat(format);
         Book book = books.get(0);
@@ -28,12 +29,14 @@ public class Component  {
     }
 
     public void update(String format, Connection connection) {
+        System.out.println("Componet UPDATE");
         System.out.println("AUFRUF DER HSQLDB UPDATE");
         ArrayList<Book> books = FormatParser.fromFormat(format);
         HSQLDBManager.instance.update(books,connection);
     }
 
     public void delete(String format, Connection connection) {
+        System.out.println("Componet DELTE");
         System.out.println("AUFRUF DER HSQLDB Delete");
         ArrayList<Book> books= FormatParser.fromFormat(format);
 
@@ -43,6 +46,7 @@ public class Component  {
 
 
     public String select(String format, Connection connection) {
+        System.out.println("Componet SELECT");
         System.out.println("AUFRUF DER HSQLDB SELECT");
         ArrayList<Book> books= FormatParser.fromFormat(format);
         Book book = books.get(0);
