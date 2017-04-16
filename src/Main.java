@@ -4,14 +4,17 @@ import Mediator.Mediator;
 import Memento.Memento;
 import View.Buchhandlung;
 
+import java.sql.Connection;
+
 public class Main {
 
     public static void main(String[] args) {
-        Buchhandlung buchhandlung = new Buchhandlung();
+
         Mediator mediator = new Mediator(1, Configuration.instance.eventBus);
         Memento memento = new Memento(2);
         Configuration.instance.viewModel.addSubscriber(mediator);
         Configuration.instance.viewModel.addSubscriber(memento);
+        Configuration.instance.viewModel.addSubscriber(Configuration.instance.viewModel);
     }
 }
 	// write your code here

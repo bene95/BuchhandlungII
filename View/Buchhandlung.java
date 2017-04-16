@@ -1,11 +1,13 @@
 package View;
 
+import com.book.Book;
 import src.Configuration;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 
 public class Buchhandlung extends JFrame {
@@ -41,11 +43,11 @@ public class Buchhandlung extends JFrame {
 
 
     public Buchhandlung() {
-        super  ();
+        super();
         pack();
         setContentPane(rootPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(new Dimension(600,300));
+        setSize(new Dimension(600, 300));
 
         setVisible(true);
 
@@ -69,7 +71,7 @@ public class Buchhandlung extends JFrame {
         btnSellBookSubmit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-            Configuration.instance.viewModel.sellBook(txtSellBookTitle.getText(),txtSellBookQuantity.getText());
+                Configuration.instance.viewModel.sellBook(txtSellBookTitle.getText(), txtSellBookQuantity.getText());
             }
         });
         undoButton.addActionListener(new ActionListener() {
@@ -81,8 +83,18 @@ public class Buchhandlung extends JFrame {
         btnBuyBookSubmit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                Configuration.instance.viewModel.buyBook(txtSellBookTitle.getText(),txtSellBookQuantity.getText());
+                Configuration.instance.viewModel.buyBook(txtSellBookTitle.getText(), txtSellBookQuantity.getText());
             }
         });
+    }
+
+    public void setSearchListBox(ArrayList<Book> result) {
+        lstSearchBook.removeAll();
+        DefaultListModel listModel = new DefaultListModel();
+        for (Book book : result) {
+            String toAdd = "Titel: " + book.getTitel() + " Quantity:" + book.getQuantity() + " UUID:" + book.getUuid();
+            listModel.addElement(toAdd);
+        }
+        lstSearchBook.setModel(listModel);
     }
 }

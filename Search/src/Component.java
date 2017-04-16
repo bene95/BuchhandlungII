@@ -3,6 +3,7 @@
 
 
 import java.lang.reflect.Method;
+import java.sql.Connection;
 import java.util.ArrayList;
 
 public class Component  {
@@ -17,7 +18,7 @@ public class Component  {
 
     }
 
-    public String search(String title){
+    public String search(String title,Connection connection){
        Book book =  HSQLDBManager.instance.getBookFromDB(title);
         ArrayList<Book> books = new ArrayList<Book>();
         books.add(book);
@@ -26,7 +27,7 @@ public class Component  {
 
 
     public String getVersion() {
-        return"Persistence";
+        return"Search";
     }
 
     public class Port implements IComponent{
@@ -43,8 +44,9 @@ public class Component  {
 
 
         @Override
-        public String search(String title) {
-            return search(title);
+        public String search(String title, Connection connection) {
+            String result = Component.this.search(title,connection);
+            return result;
         }
     }
 }

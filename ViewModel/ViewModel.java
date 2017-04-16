@@ -1,17 +1,22 @@
 package ViewModel;
 
+import View.Buchhandlung;
 import com.book.Book;
 import ViewModel.Events.*;
 import com.google.common.eventbus.EventBus;
+import com.google.common.eventbus.Subscribe;
 
 
-public class ViewModel {
+public class ViewModel extends Subscriber{
     private int eventCounter = 0;
     private int id;
     private EventBus eventBus;
-    public ViewModel(int id, EventBus eventBus) {
-    this.id = id;
+    private Buchhandlung buchhandlung;
+    public ViewModel(int id, EventBus eventBus, Buchhandlung buchhandlung) {
+        super(id);
+        this.id = id;
     this.eventBus = eventBus;
+    this.buchhandlung = buchhandlung;
     }
 
     public void addSubscriber(Subscriber subscriber) {
@@ -58,7 +63,7 @@ public class ViewModel {
 
 
     public void buyBook(String title, String quantity) {
-        saveState();
+
         Book book = new Book();
         book.setTitel(title);
         book.setQuantity(quantity);
@@ -68,7 +73,15 @@ public class ViewModel {
         eventBus.post(new UndoEvent(eventCounter++));
     }
 
-    public void saveState(){
-        eventBus.post(new SaveEvent(eventCounter++));
+
+    @Subscribe
+    public void receive(UpdateGUIEevent updateGUIEevent){
+       if(updateGUIEevent.getForGUI().equals("Search")){
+           buchhandlung.setSearchListBox(updateGUIEevent.getResultBooks());
+       }
     }
+//Macht der Mediator
+    /*public void saveState(){
+        eventBus.post(new SaveEvent(eventCounter++));
+    }*/
 }

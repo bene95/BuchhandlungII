@@ -58,10 +58,15 @@ public class Mediator extends Subscriber {
     }
     @Subscribe
     public void receive(SearchEvent searchBook){
+
         eventBus.post(new SaveEvent(eventCounter++));
         Connection connection = startup();
-        methodRepository =  searchParser.parse("select");
-        methodRepository.execute(searchBook.getBook().getTitel(),connection);
+        methodRepository =  searchParser.parse("search");
+      // ArrayList<Book> books =  methodRepository.execute(searchBook.getBook().getTitel(),connection);//hier pasaier nichts !?!?!?!?!
+      //Test
+       ArrayList<Book> books = new ArrayList<Book>();
+       books.add(new Book("Test","10","1325586699"));
+        eventBus.post(new UpdateGUIEevent(eventCounter++,"Search", books));
         //searchParser.parse("select");
     }
     @Subscribe

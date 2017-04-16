@@ -59,8 +59,6 @@ public class Component  {
         private Method[] methods = getClass().getMethods();
 
         public Port() {
-
-
         }
         public String getVersion(){
             return Component.this.getVersion();
