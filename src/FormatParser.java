@@ -46,7 +46,7 @@ public class FormatParser {
                }
                else
                {
-                   book.setUuid(splittedBooks[2]);
+                   book.setUuid(splittedPropertiy[2]);
                }
 
            books.add(book);
