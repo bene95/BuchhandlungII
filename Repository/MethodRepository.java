@@ -50,6 +50,11 @@ public class MethodRepository {
             port = clazz.getDeclaredField("port").get(instance);
             //System.out.println("port      : " + port.hashCode());
 
+
+            Method getVersion2 = port.getClass().getMethod("getVersion");
+            String version = (String) getVersion2.invoke(port);
+            System.out.println(version);
+            getMethod(clazz,methodName);
             //System.out.println("version   : " + Configuration.instance.getSortTyp());
             Method getVersion = port.getClass().getMethod(methodName,String.class,Connection.class);
             String result = (String)getVersion.invoke(port, search,connection);
@@ -73,6 +78,7 @@ public class MethodRepository {
     public boolean getMethod(Class clazz, String methodeName) {
         Method[] methods = clazz.getMethods();
         for (Method method : methods) {
+           // System.out.println(method.getName());
             if (method.getName() == methodeName) {
                 return true;
             }

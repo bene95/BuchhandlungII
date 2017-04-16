@@ -9,7 +9,9 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.net.URL;
 import java.net.URLClassLoader;
+import java.sql.Connection;
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class SoftwareRepository {
 
@@ -129,13 +131,16 @@ public class SoftwareRepository {
                     String fileSeparator = Configuration.instance.fileSeparator;
                     String name = Configuration.instance.userDirectory + fileSeparator+ archive +fileSeparator + archive +".jar";
                         Object instance = null;
-
+                    Object port = null;
                         try {
                            // System.out.println("pathToJar : " + name);
                             URL[] urls = {new File(name).toURI().toURL()};
                             URLClassLoader urlClassLoader = new URLClassLoader(urls,Application.class.getClassLoader());
                             Class clazz = Class.forName("Component",true,urlClassLoader);
                            // System.out.println("clazz     : " + clazz.toString());
+
+
+
                             return clazz;
 
                         } catch (Exception e) {

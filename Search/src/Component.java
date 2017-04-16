@@ -19,10 +19,11 @@ public class Component  {
     }
 
     public String search(String title,Connection connection){
-       Book book =  HSQLDBManager.instance.getBookFromDB(title);
+      // Book book =  HSQLDBManager.instance.getBookFromDB(title);
         System.out.println("Componet SEARCH");
         ArrayList<Book> books = new ArrayList<Book>();
-        books.add(book);
+        Book bsp = new Book("Test","Test","Test0");
+        books.add(bsp);
         return FormatParser.toFormat(books);
     }
 
