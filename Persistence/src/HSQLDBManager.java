@@ -120,9 +120,31 @@ public enum HSQLDBManager {
         }
         return null;
     }
+/*
+    public ArrayList<Book> searchRegBook(String title, Connection connection) {
+        ArrayList<Book> regSearchB = new ArrayList<>();
+        try {
+            //HSQLDBManager.instance.startup();
+            stmt = connection.createStatement();
+            String getBook = "SELECT title, quantity, uuid FROM book WHERE title LIKE ?";
+            PreparedStatement stmt = connection.prepareStatement(getBook);
+            stmt.setString(1,title);
+            result = stmt.executeQuery();
+            HSQLDBManager.instance.shutdown(connection);
+            // The result "pointer" always stays behind the result, have to increment once!!
+            while(result.next()) {
+                Book book = new Book(result.getString(1), result.getString(2), result.getString(3));
+                regSearchB.add(book);
+            }
+            return regSearchB;
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 
 
-  /*
     public void delete(String uuid) {
         update("DELETE FROM book WHERE uuid = \'" + uuid +"\';");
     }

@@ -48,10 +48,9 @@ public class Component  {
     public String select(String format, Connection connection) {
         System.out.println("Componet SELECT");
         System.out.println("AUFRUF DER HSQLDB SELECT");
-        Book book = HSQLDBManager.instance.getBookFromDB(format,connection);
         ArrayList<Book> b = new ArrayList<>();
-        b.add(book);
-
+         Book book = HSQLDBManager.instance.getBookFromDB(format,connection);
+         b.add(book);
         return FormatParser.toFormat(b);
     }
     public String getVersion() {
