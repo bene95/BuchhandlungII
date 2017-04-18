@@ -92,9 +92,16 @@ public class Buchhandlung extends JFrame {
         lstSearchBook.removeAll();
         DefaultListModel listModel = new DefaultListModel();
         for (Book book : result) {
-            String toAdd = "Titel: " + book.getTitel() + " Quantity:" + book.getQuantity() + " UUID:" + book.getUuid();
-            listModel.addElement(toAdd);
+            if(book.getTitel() != null) {
+                String toAdd = "Titel: " + book.getTitel() + " Quantity:" + book.getQuantity() + " UUID:" + book.getUuid();
+                listModel.addElement(toAdd);
+            }
+            else {
+                String s = "Nicht vorhanden";
+                listModel.addElement(s);
+            }
         }
         lstSearchBook.setModel(listModel);
     }
+
 }

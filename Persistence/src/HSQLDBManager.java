@@ -71,10 +71,10 @@ public enum HSQLDBManager {
 
 
         try {
-            PreparedStatement stmt = connection.prepareStatement("INSERT INTO book (title,quantity,uuid) VALUES (?,?,?)");
+            PreparedStatement stmt = connection.prepareStatement("INSERT INTO book (title,quantity,uuid) VALUES (?,0,0)");
             stmt.setString(1,book.getTitel());
-            stmt.setString(2,book.getQuantity());
-            stmt.setString(3,book.getUuid());
+            //stmt.setString(2,book.getQuantity());
+            //stmt.setString(3,book.getUuid());
             stmt.execute();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -96,6 +96,30 @@ public enum HSQLDBManager {
         //update("DELETE FROM book WHERE title = \'" + book.getTitel() +"\';",connection);
     }
 
+    public Book getBookFromDB(String title,Connection connection) {
+        try {
+            //HSQLDBManager.instance.startup();
+            stmt = connection.createStatement();
+            String getBook = "SELECT title, quantity, uuid FROM book WHERE title = \'" + title +"\';";
+            result = stmt.executeQuery(getBook);
+            shutdown(connection);
+
+            if(!result.next()){
+                return new Book();
+            }
+            else
+            {
+                // The result "pointer" always stays behind the result, have to increment once!!
+                Book b1 = new Book(result.getString("title"), result.getString("quantity"), result.getString("uuid"));
+                //System.out.println(b1.getTitel());
+                return b1;
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 
 
   /*
@@ -105,23 +129,7 @@ public enum HSQLDBManager {
 
 
     // One Book With Title
-    public Book getBookFromDB(String title) {
-        try {
-            //HSQLDBManager.instance.startup();
-            stmt = connection.createStatement();
-            String getBook = "SELECT title, quantity, uuid FROM book WHERE title = \'" + title +"\';";
-            result = stmt.executeQuery(getBook);
-            HSQLDBManager.instance.shutdown();
-            // The result "pointer" always stays behind the result, have to increment once!!
-            result.next();
-            Book b1 = new Book(result.getString("title"), result.getString("quantity"), result.getString("uuid"));
-            //System.out.println(b1.getTitel());
-            return b1;
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
+
 
     // Return all books in List
     public ArrayList<Book> allBookFromDB() {
