@@ -7,11 +7,6 @@ import java.util.ArrayList;
 public enum HSQLDBManager {
     instance;
 
-    private Connection connection = null;
-    private String driverName = "jdbc:hsqldb:file:";
-    private String username = "ROOT";
-    private String password = "NnaBm1EKxVRVPGM6AAnBLQ==";
-    private String userDir = Configuration.instance.userDirectory;
 
     //AES values
     //private String key = "Bar12345Bar12345"; // 128 bit key
@@ -41,9 +36,20 @@ public enum HSQLDBManager {
     public void update(ArrayList<Book> books,Connection connection) {
         Book oldBook = books.get(0);
         Book newBook = books.get(1);
-        //TODO UPDATE Statment
-        String sqlStatement = "";
-        update(sqlStatement,connection);
+
+        try {
+            PreparedStatement stmt = connection.prepareStatement("UPDATE book SET title = ? , quantity = ? , uuid = ? WHERE title = ?");
+            stmt.setString(1,newBook.getTitel());
+            stmt.setString(2,newBook.getQuantity());
+            stmt.setString(3,newBook.getUuid());
+            stmt.setString(4,oldBook.getTitel());
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        update("UPDATE book SET title = \'" + newBook.getTitel() + "\' , quantity = \'" + newBook
+                .getQuantity() + "\' , uuid = \'" + newBook.getUuid() +"\' WHERE title = \'" + oldBook.getTitel() + "\';",connection );
+
     }
     /*
         public void startup() {
@@ -60,34 +66,43 @@ public enum HSQLDBManager {
     {
         Book book = books.get(0);
         System.out.println("INSERT METHODE der HSQLDB");
-
-        System.out.println();
-
         System.out.println(books.get(0).getTitel());
-
-        this.connection = connection;
         System.out.println("VOR UPDATE AUFRUF");
-        update("INSERT INTO book (title,quantity,uuid) " +
-                "VALUES (\'" + book.getTitel() + "\',\'" + book.getQuantity() + "\',\'" + book.getUuid() + "\');",connection);
+
+
+        try {
+            PreparedStatement stmt = connection.prepareStatement("INSERT INTO book (title,quantity,uuid) VALUES (?,?,?)");
+            stmt.setString(1,book.getTitel());
+            stmt.setString(2,book.getQuantity());
+            stmt.setString(3,book.getUuid());
+            stmt.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
 
     }
 
 
     public void delete(ArrayList<Book> books,Connection connection) {
         Book book = books.get(0);
-        update("DELETE FROM book WHERE title = \'" + book.getTitel() +"\';",connection);
+        try {
+            PreparedStatement stmt = connection.prepareStatement("DELETE FROM book WHERE title = ?");
+            stmt.setString(1,book.getTitel());
+            stmt.execute();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        //update("DELETE FROM book WHERE title = \'" + book.getTitel() +"\';",connection);
     }
+
+
 
   /*
     public void delete(String uuid) {
         update("DELETE FROM book WHERE uuid = \'" + uuid +"\';");
     }
 
-    public void update(Book book)
-    {
-       update("UPDATE book SET title = \'" + book.getTitel() + "\' , quantity = \'" + book.getQuantity() + "\' , uuid = \'" + book.getUuid() +"\' WHERE title = \'" + book.getTitel() + "\';" );
-
-    }
 
     // One Book With Title
     public Book getBookFromDB(String title) {

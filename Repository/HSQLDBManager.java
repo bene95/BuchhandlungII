@@ -14,7 +14,7 @@ public enum HSQLDBManager {
     private Connection connection = null;
     private String driverName = "jdbc:hsqldb:file:";
     private String username = "ROOT";
-    private String password = "NnaBm1EKxVRVPGM6AAnBLQ==";
+    private String password = "cAvCRxkD+hLjGjr9sYvZdA==";
     private String userDir = Configuration.instance.userDirectory;
 
     //AES values
@@ -51,10 +51,21 @@ public enum HSQLDBManager {
         }
     }
 
-    public void insert(com.book.Book book) {
-        System.out.println("Dort");
-        update("INSERT INTO book (title,quantity,uuid) " +
-                "VALUES (\'" + book.getTitel() + "\',\'" + book.getQuantity() + "\',\'" + book.getUuid() + "\');");
+    public void insert(Book book)
+    {
+        HSQLDBManager.instance.startup();
+        try {
+            PreparedStatement stmt = connection.prepareStatement("INSERT INTO book (title,quantity,uuid) VALUES (?,?,?)");
+            stmt.setString(1,book.getTitel());
+            stmt.setString(2,book.getQuantity());
+            stmt.setString(3,book.getUuid());
+            stmt.execute();
+            HSQLDBManager.instance.shutdown();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            HSQLDBManager.instance.shutdown();
+        }
+
 
     }
 
@@ -67,10 +78,6 @@ public enum HSQLDBManager {
         update("DELETE FROM book WHERE uuid = \'" + uuid +"\';");
     }
 
-    public void update(Book book)
-    {
-       update("UPDATE book SET title = \'" + book.getTitel() + "\' , quantity = \'" + book.getQuantity() + "\' , uuid = \'" + book.getUuid() +"\' WHERE title = \'" + book.getTitel() + "\';" );
-    }
 
     // One Book With Title
     public Book getBookFromDB(String title) {
@@ -181,35 +188,5 @@ public enum HSQLDBManager {
 
 
 
-    /*
-    Currently no Use, maybe when first starting
-    public void dropTable() {
-        System.out.println("--- dropTable");
-
-        StringBuilder sqlStringBuilder = new StringBuilder();
-        sqlStringBuilder.append("DROP TABLE data");
-        System.out.println("sqlStringBuilder : " + sqlStringBuilder.toString());
-
-        update(sqlStringBuilder.toString());
-    }
-
-    public void createTable() {
-        StringBuilder sqlStringBuilder = new StringBuilder();
-        sqlStringBuilder.append("CREATE TABLE buch ").append(" ( ");
-        sqlStringBuilder.append(" )");
-        update(sqlStringBuilder.toString());
-    }
-
-
-      AES
-        String key = "Bar12345Bar12345"; // 128 bit key
-        String initVector = "RandomInitVector"; // 16 bytes IV
-        System.out.println(AdvancedEncryptionStandard.encrypt(key,initVector,"Hello World"));
-
-        System.out.println(AdvancedEncryptionStandard.decrypt(key, initVector,
-                "9MU7vSBqfzPnj7iWvvfsEw"));
-
-
-    */
 
 }

@@ -10,13 +10,12 @@ import Repository.HSQLDBManager;
 import java.util.ArrayList;
 
 public class Memento extends Subscriber {
-    ArrayList<Book> dataBase;
-    HSQLDBManager hsqldbManager;
+    private ArrayList<Book> dataBase;
     private DatabaseCareTaker databaseCareTaker = new DatabaseCareTaker();
     
     public Memento(int id) {
         super(id);
-        this.dataBase = dataBase;
+        this.dataBase = HSQLDBManager.instance.allBookFromDB();
         databaseCareTaker.setDatabaseMemento(new DatabaseMemento(this.dataBase));
     }
     @Subscribe
@@ -27,7 +26,6 @@ public class Memento extends Subscriber {
     }
     @Subscribe
     public void receive(SaveEvent saveEvent){
-
         System.out.println("Save");
         databaseCareTaker.setDatabaseMemento(new DatabaseMemento(dataBase));
     }
@@ -37,7 +35,6 @@ public class Memento extends Subscriber {
         HSQLDBManager.instance.init();
         for (Book b1: books) {
             HSQLDBManager.instance.insert(b1);
-            
         }
     }
 }

@@ -2,14 +2,10 @@ package src;
 
 import Mediator.Mediator;
 import Memento.Memento;
-import View.Buchhandlung;
-
-import java.sql.Connection;
 
 public class Main {
 
     public static void main(String[] args) {
-
         Mediator mediator = new Mediator(1, Configuration.instance.eventBus);
         Memento memento = new Memento(2);
         Configuration.instance.viewModel.addSubscriber(mediator);
