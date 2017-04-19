@@ -16,6 +16,4 @@ public class BuyEvent extends Event {
     }
 
 
-
-
 }

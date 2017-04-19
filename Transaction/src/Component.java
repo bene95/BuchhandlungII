@@ -19,11 +19,17 @@ public class Component  {
     }
     public void buy(String format, Connection connection) {
         System.out.println("Componet BUY");
-        //TODO SQL
+        ArrayList<Book> books= FormatParser.fromFormat(format);
+        Book book = books.get(0);
+        HSQLDBManager.instance.buy(books,connection);
+
     }
+
     public void sell(String format, Connection connection) {
         System.out.println("Componet SELL");
-        //TODO SQL
+        ArrayList<Book> books= FormatParser.fromFormat(format);
+        Book book = books.get(0);
+        HSQLDBManager.instance.sell(books,connection);
     }
 
 
@@ -39,12 +45,12 @@ public class Component  {
             return Component.this.getVersion();
         }
         @Override
-        public void sell(String format, Connection connection) {
-            Component.this.sell(format,connection);
+        public void sell(String title, Connection connection) {
+             Component.this.sell(title,connection);
         }
         @Override
-        public void buy(String format, Connection connection) {
-            Component.this.buy(format,connection);
+        public void buy(String title, Connection connection) {
+             Component.this.buy(title,connection);
         }
     }
 }

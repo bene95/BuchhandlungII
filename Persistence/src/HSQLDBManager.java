@@ -6,13 +6,6 @@ import java.util.ArrayList;
 
 public enum HSQLDBManager {
     instance;
-
-
-    //AES values
-    //private String key = "Bar12345Bar12345"; // 128 bit key
-    private String key = "PasswordPassword";
-    private String initVector = "RandomInitVector"; // 16 bytes IV
-
     Statement stmt = null;
     ResultSet result = null;
 
@@ -47,21 +40,9 @@ public enum HSQLDBManager {
             e.printStackTrace();
         }
 
-        update("UPDATE book SET title = \'" + newBook.getTitel() + "\' , quantity = \'" + newBook
-                .getQuantity() + "\' , uuid = \'" + newBook.getUuid() +"\' WHERE title = \'" + oldBook.getTitel() + "\';",connection );
 
     }
-    /*
-        public void startup() {
-            try {
-                Class.forName("org.hsqldb.jdbcDriver");
-                String databaseURL = driverName + userDir + "\\database\\database";
-                connection = DriverManager.getConnection(databaseURL,username,AdvancedEncryptionStandard.decrypt(key, initVector,
-                        password));
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
-            }
-        }*/
+
     public void insert(ArrayList<Book> books, Connection connection)
     {
         Book book = books.get(0);
@@ -93,7 +74,6 @@ public enum HSQLDBManager {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        //update("DELETE FROM book WHERE title = \'" + book.getTitel() +"\';",connection);
     }
 
     public Book getBookFromDB(String title,Connection connection) {
@@ -120,61 +100,6 @@ public enum HSQLDBManager {
         }
         return null;
     }
-/*
-    public ArrayList<Book> searchRegBook(String title, Connection connection) {
-        ArrayList<Book> regSearchB = new ArrayList<>();
-        try {
-            //HSQLDBManager.instance.startup();
-            stmt = connection.createStatement();
-            String getBook = "SELECT title, quantity, uuid FROM book WHERE title LIKE ?";
-            PreparedStatement stmt = connection.prepareStatement(getBook);
-            stmt.setString(1,title);
-            result = stmt.executeQuery();
-            HSQLDBManager.instance.shutdown(connection);
-            // The result "pointer" always stays behind the result, have to increment once!!
-            while(result.next()) {
-                Book book = new Book(result.getString(1), result.getString(2), result.getString(3));
-                regSearchB.add(book);
-            }
-            return regSearchB;
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-
-
-    public void delete(String uuid) {
-        update("DELETE FROM book WHERE uuid = \'" + uuid +"\';");
-    }
-
-
-    // One Book With Title
-
-
-    // Return all books in List
-    public ArrayList<Book> allBookFromDB() {
-        ArrayList<Book> allB = new ArrayList<>();
-        try {
-            //HSQLDBManager.instance.startup();
-            stmt = connection.createStatement();
-            String getBook = "SELECT title, quantity, uuid FROM book;";
-            result = stmt.executeQuery(getBook);
-            HSQLDBManager.instance.shutdown();
-            // The result "pointer" always stays behind the result, have to increment once!!
-            while(result.next()) {
-                Book book = new Book(result.getString(1), result.getString(2), result.getString(3));
-                allB.add(book);
-            }
-            return allB;
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-*/
 
     public void shutdown(Connection connection) {
         try {
@@ -185,97 +110,6 @@ public enum HSQLDBManager {
             System.out.println(sqle.getMessage());
         }
     }
-/*
-    public void buy(Book book){
-        try {
-            //HSQLDBManager.instance.startup();
-            stmt = connection.createStatement();
-            String getBook = "SELECT title, quantity, uuid FROM book WHERE title = \'" + book.getTitel() +"\';";
-            result = stmt.executeQuery(getBook);
-            HSQLDBManager.instance.shutdown();
-            result.next();
-            String quantity =  result.getString("quantity");
-            int quant = Integer.parseInt(quantity);
-            quant++;
-            quantity = String.valueOf(quant);
-            if(result != null)
-            {
-                update("UPDATE book SET  quantity = \'" +quantity+ "\' WHERE title = \'" + book.getTitel() + "\';" );
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
 
-
-    }
-
-    public void sell(Book book){
-        try {
-            //HSQLDBManager.instance.startup();
-            stmt = connection.createStatement();
-            String getBook = "SELECT title, quantity, uuid FROM book WHERE title = \'" + book.getTitel() +"\';";
-            result = stmt.executeQuery(getBook);
-            HSQLDBManager.instance.shutdown();
-            result.next();
-            String quantity =  result.getString("quantity");
-            int quant = Integer.parseInt(quantity);
-            quant--;
-            quantity = String.valueOf(quant);
-            if(quant > 0)
-            {
-
-                update("UPDATE book SET  quantity = \'" + quantity + "\' WHERE title = \'" + book.getTitel() + "\';" );
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-
-    }
-
- */
-
-
- /*
-    public void init() {
-        password = AdvancedEncryptionStandard.encrypt(key,initVector,"ROOT");
-        update("DROP TABLE book");
-        update("CREATE TABLE book ( title varchar(255)," +
-                                                "quantity varchar(255)," +
-                                                "uuid varchar(255));");
-    }
-
-
-
-    /*
-    Currently no Use, maybe when first starting
-    public void dropTable() {
-        System.out.println("--- dropTable");
-
-        StringBuilder sqlStringBuilder = new StringBuilder();
-        sqlStringBuilder.append("DROP TABLE data");
-        System.out.println("sqlStringBuilder : " + sqlStringBuilder.toString());
-
-        update(sqlStringBuilder.toString());
-    }
-
-    public void createTable() {
-        StringBuilder sqlStringBuilder = new StringBuilder();
-        sqlStringBuilder.append("CREATE TABLE buch ").append(" ( ");
-        sqlStringBuilder.append(" )");
-        update(sqlStringBuilder.toString());
-    }
-
-
-      AES
-        String key = "Bar12345Bar12345"; // 128 bit key
-        String initVector = "RandomInitVector"; // 16 bytes IV
-        System.out.println(AdvancedEncryptionStandard.encrypt(key,initVector,"Hello World"));
-
-        System.out.println(AdvancedEncryptionStandard.decrypt(key, initVector,
-                "9MU7vSBqfzPnj7iWvvfsEw"));
-
-
-    */
 
 }

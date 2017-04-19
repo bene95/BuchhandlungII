@@ -60,7 +60,7 @@ public class Mediator extends Subscriber {
     public void receive(SearchEvent searchBook){
         eventBus.post(new SaveEvent(eventCounter++));
         Connection connection = startup();
-        methodRepository =  searchParser.parse("select");
+        methodRepository =  searchParser.parse("search");
        ArrayList<Book> books =  methodRepository.execute(searchBook.getBook().getTitel(),connection);//hier pasaier nichts !?!?!?!?!
       //Test
     //   ArrayList<Book> books = new ArrayList<Book>();
@@ -94,18 +94,20 @@ public class Mediator extends Subscriber {
         eventBus.post(new SaveEvent(eventCounter++));
         Connection connection = startup();
         methodRepository = searchParser.parse("sell");
+        System.out.println(sellEvent.getBook().getTitel());
         ArrayList<Book> books = new ArrayList<Book>();
         books.add(sellEvent.getBook());
-        methodRepository.execute(books, connection);
+        methodRepository.execute(books,connection);
     }
     @Subscribe
     public void receive(BuyEvent buyEvent){
         eventBus.post(new SaveEvent(eventCounter++));
         Connection connection = startup();
         methodRepository = searchParser.parse("buy");
+        System.out.println(buyEvent.getBook().getTitel());
         ArrayList<Book> books = new ArrayList<Book>();
         books.add(buyEvent.getBook());
-        methodRepository.execute(books, connection);
+        methodRepository.execute(books,connection);
     }
 
 

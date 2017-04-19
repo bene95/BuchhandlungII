@@ -40,6 +40,8 @@ public class Buchhandlung extends JFrame {
     private JButton btnBuyBookSubmit;
     private JLabel lblUpdateBookNewTitle;
     private JLabel lblUpdteBookOldTitle;
+    private JTextField txtBuyBookTitle;
+    private JTextField txtBuyBookQuantity;
 
 
     public Buchhandlung() {
@@ -83,7 +85,7 @@ public class Buchhandlung extends JFrame {
         btnBuyBookSubmit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                Configuration.instance.viewModel.buyBook(txtSellBookTitle.getText(), txtSellBookQuantity.getText());
+                Configuration.instance.viewModel.buyBook(txtBuyBookTitle.getText(), txtBuyBookQuantity.getText());
             }
         });
     }
@@ -91,16 +93,22 @@ public class Buchhandlung extends JFrame {
     public void setSearchListBox(ArrayList<Book> result) {
         lstSearchBook.removeAll();
         DefaultListModel listModel = new DefaultListModel();
-        for (Book book : result) {
-            if(book.getTitel() != null) {
-                String toAdd = "Titel: " + book.getTitel() + " Quantity:" + book.getQuantity() + " UUID:" + book.getUuid();
-                listModel.addElement(toAdd);
+        String s = "Nicht vorhanden";
+        if(result != null){
+            for (Book book : result) {
+                if(book.getTitel() != null) {
+                    String toAdd = "Titel: " + book.getTitel() + " Quantity:" + book.getQuantity() + " UUID:" + book.getUuid();
+                    listModel.addElement(toAdd);
+                }
+                else {
+
+                    listModel.addElement(s);
+                }
             }
-            else {
-                String s = "Nicht vorhanden";
-                listModel.addElement(s);
-            }
+
         }
+        else listModel.addElement(s);
+
         lstSearchBook.setModel(listModel);
     }
 

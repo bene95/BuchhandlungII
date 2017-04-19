@@ -69,35 +69,6 @@ public enum HSQLDBManager {
 
     }
 
-
-    public void delete(Book book) {
-        update("DELETE FROM book WHERE uuid = \'" + book.getUuid() +"\';");
-    }
-
-    public void delete(String uuid) {
-        update("DELETE FROM book WHERE uuid = \'" + uuid +"\';");
-    }
-
-
-    // One Book With Title
-    public Book getBookFromDB(String title) {
-        try {
-            HSQLDBManager.instance.startup();
-            stmt = connection.createStatement();
-            String getBook = "SELECT title, quantity, uuid FROM book WHERE title = \'" + title +"\';";
-            result = stmt.executeQuery(getBook);
-            HSQLDBManager.instance.shutdown();
-            // The result "pointer" always stays behind the result, have to increment once!!
-            result.next();
-            Book b1 = new Book(result.getString("title"), result.getString("quantity"), result.getString("uuid"));
-            //System.out.println(b1.getTitel());
-            return b1;
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-
     // Return all books in List
     public ArrayList<Book> allBookFromDB() {
         ArrayList<Book> allB = new ArrayList<>();
@@ -120,7 +91,6 @@ public enum HSQLDBManager {
         return null;
     }
 
-
     public void shutdown() {
         try {
             Statement statement = connection.createStatement();
@@ -131,52 +101,6 @@ public enum HSQLDBManager {
         }
     }
 
-    public void buy(Book book){
-        try {
-            HSQLDBManager.instance.startup();
-            stmt = connection.createStatement();
-            String getBook = "SELECT title, quantity, uuid FROM book WHERE title = \'" + book.getTitel() +"\';";
-            result = stmt.executeQuery(getBook);
-            HSQLDBManager.instance.shutdown();
-            result.next();
-            String quantity =  result.getString("quantity");
-            int quant = Integer.parseInt(quantity);
-            quant++;
-            quantity = String.valueOf(quant);
-            if(result != null)
-            {
-                update("UPDATE book SET  quantity = \'" +quantity+ "\' WHERE title = \'" + book.getTitel() + "\';" );
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-
-    }
-
-    public void sell(Book book){
-        try {
-            HSQLDBManager.instance.startup();
-            stmt = connection.createStatement();
-            String getBook = "SELECT title, quantity, uuid FROM book WHERE title = \'" + book.getTitel() +"\';";
-            result = stmt.executeQuery(getBook);
-            HSQLDBManager.instance.shutdown();
-            result.next();
-            String quantity =  result.getString("quantity");
-            int quant = Integer.parseInt(quantity);
-            quant--;
-            quantity = String.valueOf(quant);
-            if(quant > 0)
-            {
-
-                update("UPDATE book SET  quantity = \'" + quantity + "\' WHERE title = \'" + book.getTitel() + "\';" );
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-
-    }
     //Currently no use
     public void init() {
         password = AdvancedEncryptionStandard.encrypt(key,initVector,"ROOT");
