@@ -1,5 +1,6 @@
 package Repository;
 
+import Parser.Soundex;
 import com.book.Book;
 import javafx.application.Application;
 import src.Configuration;
@@ -126,8 +127,7 @@ public class SoftwareRepository {
             for (int i = 0 ; i<=2 ; i++){
                // System.out.println(Archive.intValue(i));
                 Archive s = (Archive) Archive.intValue(i);
-
-                if(s.toString() ==  archive) {
+                if(s.toString() == archive) {
                     String fileSeparator = Configuration.instance.fileSeparator;
                     String name = Configuration.instance.userDirectory + fileSeparator+ archive +fileSeparator + archive +".jar";
                         Object instance = null;
@@ -155,5 +155,7 @@ public class SoftwareRepository {
             return null;
 
     }
+
+
 }
 

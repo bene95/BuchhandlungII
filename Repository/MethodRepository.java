@@ -1,6 +1,7 @@
 package Repository;
 
 
+import Parser.Soundex;
 import com.book.Book;
 
 import src.FormatParser;
@@ -16,7 +17,7 @@ public class MethodRepository {
 
     public MethodRepository(Class cl, String methodName) {
         this.clazz = cl;
-        this.methodName = methodName;
+        getMethod(this.clazz,methodName);
     }
 
     public void execute(ArrayList<Book> books, Connection connection) {
@@ -79,8 +80,12 @@ public class MethodRepository {
     public boolean getMethod(Class clazz, String methodeName) {
         Method[] methods = clazz.getMethods();
         for (Method method : methods) {
+            System.out.println(Soundex.soundex(method.getName()));
+            System.out.println(Soundex.soundex(methodeName));
             System.out.println(method.getName());
-            if (method.getName() == methodeName) {
+
+            if (Soundex.soundex(method.getName()).equals(Soundex.soundex(methodeName))) {
+                this.methodName = method.getName();
                 return true;
             }
         }
