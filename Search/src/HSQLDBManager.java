@@ -14,12 +14,12 @@ public enum HSQLDBManager {
     public ArrayList<Book> searchRegBook(String title, Connection connection) {
         ArrayList<Book> regSearchB = new ArrayList<>();
         try {
+            System.out.println(".............................");
             //HSQLDBManager.instance.startup();
             stmt = connection.createStatement();
-            String getBook = "SELECT title, quantity, uuid FROM book WHERE title LIKE ?";
+            String getBook = "SELECT title, quantity, uuid FROM book WHERE REGEXP_MATCHES(title,?)";
             PreparedStatement stmt = connection.prepareStatement(getBook);
-            String t = "%"+ title + "%";
-            stmt.setString(1,t);
+            stmt.setString(1,title);
             result = stmt.executeQuery();
             HSQLDBManager.instance.shutdown(connection);
             // The result "pointer" always stays behind the result, have to increment once!!
