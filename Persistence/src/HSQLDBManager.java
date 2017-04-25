@@ -33,9 +33,15 @@ public enum HSQLDBManager {
         try {
             PreparedStatement stmt = connection.prepareStatement("UPDATE book SET title = ? , quantity = ? , uuid = ? WHERE title = ?");
             stmt.setString(1,newBook.getTitel());
-            stmt.setString(2,newBook.getQuantity());
+            if (newBook.getQuantity() == null)
+            {
+                String wert = "0";
+                stmt.setString(2,wert);
+            }
+            else stmt.setString(2,newBook.getQuantity());
             stmt.setString(3,newBook.getUuid());
             stmt.setString(4,oldBook.getTitel());
+            stmt.execute();
         } catch (SQLException e) {
             e.printStackTrace();
         }
