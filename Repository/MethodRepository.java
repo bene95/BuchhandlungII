@@ -20,6 +20,10 @@ public class MethodRepository {
         getMethod(this.clazz,methodName);
     }
 
+    public Class getClazz() {
+        return clazz;
+    }
+
     public void execute(ArrayList<Book> books, Connection connection) {
        Object instance;
        Object port;
